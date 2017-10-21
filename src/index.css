@@ -5,3 +5,15 @@ body {
   font-family: verdana, sans-serif;
 }
 
+
+
+.container{
+	display: flex;
+}
+
+
+.item{
+	min-width: 200px;
+	padding: 10px;
+	flex: 1;
+}

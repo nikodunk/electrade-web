@@ -54,19 +54,28 @@ export default class App extends React.Component{
 
   render(){
     return (
-          <div>
+          <div >
             sunboxlabs
-            <div>
-            {this.state.articles.map(article => (
-                <div>
-                  <p style={{paddingLeft: 10}}>
-                    <b>{article.title}</b> &nbsp;
-                    <span style={{color: 'grey'}}>{article.feed.name}</span> &nbsp;&nbsp;&nbsp;
-                    <span style={{border: '1px grey solid', padding: 3, borderRadius: 3}}><TimeAgo date={article.published} /></span></p>
+            <div class="container">
+              <div class="item">
+                stocks
+              </div>
+              <div class="item">
+                newest updates
+              {this.state.articles.map(article => (
+                  <div>
+                    <p style={{paddingLeft: 10}}>
+                      <b>{article.title}</b> &nbsp;
+                      <span style={{color: 'grey'}}>{article.feed.name}</span> &nbsp;&nbsp;&nbsp;
+                      <span style={{border: '1px grey solid', padding: 3, borderRadius: 3}}><TimeAgo date={article.published} /></span></p>
 
-                <hr />
-                </div>
-              ))}
+                  <hr />
+                  </div>
+                ))}
+              </div>
+              <div class="item">
+                guides
+              </div>
             </div>
           </div>
     )

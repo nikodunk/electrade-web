@@ -9,11 +9,28 @@ body {
 
 .container{
 	display: flex;
+	height: 95vh;
+
 }
 
 
-.item{
+.item1{
 	min-width: 200px;
 	padding: 10px;
 	flex: 1;
+	
+}
+
+.item2{
+	
+	padding: 10px;
+	flex: 2;
+	overflow-y: scroll;
+}
+
+.item3{
+	
+	padding: 10px;
+	flex: 1;
+	
 }

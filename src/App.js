@@ -57,10 +57,10 @@ export default class App extends React.Component{
           <div >
             sunboxlabs
             <div class="container">
-              <div class="item">
+              <div class="item1">
                 stocks
               </div>
-              <div class="item">
+              <div class="item2">
                 newest updates
               {this.state.articles.map(article => (
                   <div>
@@ -73,7 +73,7 @@ export default class App extends React.Component{
                   </div>
                 ))}
               </div>
-              <div class="item">
+              <div class="item3">
                 guides
               </div>
             </div>

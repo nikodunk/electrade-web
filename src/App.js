@@ -1,7 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import feed from 'feed-read'
-import TimeAgo from 'react-timeago'
+import News from './news'
+
+
 
 
 export default class App extends React.Component{
@@ -22,34 +23,35 @@ export default class App extends React.Component{
   }
 
   componentDidMount() {
-      feed("https://electrek.co/feed/", function(err, articles) {
-        if (err) throw err;
 
-        var _articles = this.state.articles
-        _articles.push.apply(_articles, articles)
 
-        this.setState(() => ({
-          articles
-        }));
 
-        }.bind(this)
-      );
+      // $.get('http://finance.yahoo.com/webservice/v1/symbols/allcurrencies/quote?format=json', function (data) {
+      //     console.log(data)
+      // });
 
-      feed("https://techcrunch.com/greentech/feed", function(err, articles) {
-        if (err) throw err;
 
-        var _articles = this.state.articles
-        _articles.push.apply(_articles, articles)
+      // this.articleSort()
 
-        this.setState(() => ({
-          articles: _articles
-        }));
 
-        }.bind(this)
-      );
+
 
 
   }
+
+
+    articleSort(){
+        var _articles = this.state.articles
+        _articles.sort(function(a,b){
+          // Turn your strings into dates, and then subtract them
+          // to get a value that is either negative, positive, or zero.
+          return b.published - a.published;
+        }.bind(this));
+        this.setState(() => ({
+          articles: _articles
+        }));
+      }
+
 
 
   render(){
@@ -62,16 +64,7 @@ export default class App extends React.Component{
               </div>
               <div class="item2">
                 newest updates
-              {this.state.articles.map(article => (
-                  <div>
-                    <p style={{paddingLeft: 10}}>
-                      <b>{article.title}</b> &nbsp;
-                      <span style={{color: 'grey'}}>{article.feed.name}</span> &nbsp;&nbsp;&nbsp;
-                      <span style={{border: '1px grey solid', padding: 3, borderRadius: 3}}><TimeAgo date={article.published} /></span></p>
-
-                  <hr />
-                  </div>
-                ))}
+                <News />
               </div>
               <div class="item3">
                 guides

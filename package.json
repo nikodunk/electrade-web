@@ -1,20 +1,25 @@
 {
   "name": "greenspectator",
   "version": "0.1.0",
+  "homepage": "https://nikodunk.github.io/sunboxlabs2",
   "private": true,
   "dependencies": {
-    "feed-read": "0.0.1",
     "firebase": "^4.6.0",
-    "jquery": "^3.2.1",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
     "react-scripts": "1.0.14",
     "react-timeago": "^3.4.3"
   },
+  "devDependencies": {
+    "gh-pages": "^0.12.0",
+    "react-scripts": "0.9.5"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   }
 }

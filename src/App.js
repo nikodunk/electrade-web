@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import News from './news'
-
+import Stocks from './stocks'
 
 
 
@@ -36,10 +36,13 @@ export default class App extends React.Component{
   render(){
     return (
           <div >
-            sunboxlabs
+            <div class="title">
+              electricFeed | your real-time updates on the solarization of the world
+            </div>
             <div class="container">
               <div class="left">
                 stocks
+                <Stocks />
               </div>
               <div class="news">
                 newest updates

@@ -29,6 +29,7 @@ hr {
 .container{
 	display: flex;
 	height: 95vh;
+	border-top: solid 1px lightgrey;
 
 }
 
@@ -37,7 +38,7 @@ hr {
 	min-width: 200px;
 	padding: 10px;
 	flex: 1;
-	
+	border-right: solid 1px lightgrey;
 }
 
 .news{
@@ -51,5 +52,15 @@ hr {
 	
 	padding: 10px;
 	flex: 1;
+	border-left: solid 1px lightgrey;
 	
+}
+
+
+.title {
+	padding: 10px;
+}
+
+.newsItem{
+	border-bottom: solid 1px lightgrey;
 }

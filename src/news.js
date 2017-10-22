@@ -87,7 +87,7 @@ export default class News extends React.Component {
     return (
       <div>
         {this.state.items.reverse().map(article => (
-                  <div>
+                  <div class="newsItem">
                     <p style={{paddingLeft: 10}}>
                       <a target="_blank" class="article" href={article.link} >{article.title}</a> &nbsp; 
                       <span class="source">{article.source}</span> 
@@ -95,8 +95,6 @@ export default class News extends React.Component {
                       <span class="time">
                         <TimeAgo date={article.published} />
                       </span></p>
-
-                  <hr />
                   </div>
                 ))}
       </div>

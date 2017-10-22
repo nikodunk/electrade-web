@@ -5,7 +5,26 @@ body {
   font-family: verdana, sans-serif;
 }
 
+.article {
+	text-decoration: none;
+}
 
+.source {
+	color: grey;
+	
+}
+
+.time {
+	border: 1px solid grey;
+	padding: 3px;
+	color: grey;
+	border-radius: 3px;
+	font-size: .8rem;
+}
+
+hr {
+	background-color: lightgrey;
+}
 
 .container{
 	display: flex;
@@ -14,21 +33,21 @@ body {
 }
 
 
-.item1{
+.left{
 	min-width: 200px;
 	padding: 10px;
 	flex: 1;
 	
 }
 
-.item2{
+.news{
 	
 	padding: 10px;
-	flex: 2;
+	flex: 3;
 	overflow-y: scroll;
 }
 
-.item3{
+.right{
 	
 	padding: 10px;
 	flex: 1;

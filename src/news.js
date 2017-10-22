@@ -16,6 +16,7 @@ firebase.initializeApp(config);
 export default class News extends React.Component {
   constructor(props) {
     super(props);
+    // this._articleSort = this._articleSort.bind(this)
     this._fbUpdate = this._fbUpdate.bind(this);
 
     this.state = {
@@ -30,12 +31,28 @@ export default class News extends React.Component {
     this.ref.on("value", (dataSnapshot) => {
       this.items = dataSnapshot.val()
       this.items = Object.keys(this.items).map(key => this.items[key])
+      // this._articleSort(this.items)
       this.setState({
           items: this.items
       })
       console.log(this.state.items)
     })
+    
   }
+
+  // _articleSort(items){
+  //     console.log('running')
+  //     var _articles = items
+  //     _articles.sort(function(a,b){
+  //       return b.published - a.published;
+  //       }.bind(this));
+  //     this.setState(() => ({
+  //       items: _articles
+  //     }));
+  //   }
+
+
+
 
   componentWillUnmount() {
     this.ref.off();
@@ -69,13 +86,13 @@ export default class News extends React.Component {
   render() {
     return (
       <div>
-        {this.state.items.map(article => (
+        {this.state.items.reverse().map(article => (
                   <div>
                     <p style={{paddingLeft: 10}}>
-                      <b>{article.title}</b> &nbsp;
-                      <span style={{color: 'grey'}}>{article.source}</span> 
+                      <a target="_blank" class="article" href={article.link} >{article.title}</a> &nbsp; 
+                      <span class="source">{article.source}</span> 
                       &nbsp;&nbsp;&nbsp;
-                      <span style={{border: '1px grey solid', padding: 3, borderRadius: 3}}>
+                      <span class="time">
                         <TimeAgo date={article.published} />
                       </span></p>
 

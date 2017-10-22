@@ -31,42 +31,21 @@ export default class App extends React.Component{
       // });
 
 
-      // this.articleSort()
-
-
-
-
-
   }
-
-
-    articleSort(){
-        var _articles = this.state.articles
-        _articles.sort(function(a,b){
-          // Turn your strings into dates, and then subtract them
-          // to get a value that is either negative, positive, or zero.
-          return b.published - a.published;
-        }.bind(this));
-        this.setState(() => ({
-          articles: _articles
-        }));
-      }
-
-
-
+  
   render(){
     return (
           <div >
             sunboxlabs
             <div class="container">
-              <div class="item1">
+              <div class="left">
                 stocks
               </div>
-              <div class="item2">
+              <div class="news">
                 newest updates
                 <News />
               </div>
-              <div class="item3">
+              <div class="right">
                 guides
               </div>
             </div>

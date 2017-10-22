@@ -37,19 +37,19 @@ export default class App extends React.Component{
     return (
           <div >
             <div class="title">
-              electricFeed | your real-time updates on the solarization of the world
+              <b>electricFeed</b> your real-time updates on the solarization of the world
             </div>
             <div class="container">
               <div class="left">
-                stocks
+                <b>stocks</b>
                 <Stocks />
               </div>
               <div class="news">
-                newest updates
+                <b>newest updates</b>
                 <News />
               </div>
               <div class="right">
-                guides
+                <b>guides</b>
               </div>
             </div>
           </div>

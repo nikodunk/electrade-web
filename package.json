@@ -8,8 +8,10 @@
     "jquery": "^3.2.1",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
+    "react-iframe": "^1.0.7",
     "react-scripts": "1.0.14",
-    "react-timeago": "^3.4.3"
+    "react-timeago": "^3.4.3",
+    "stocktwits-react-text-js": "^1.0.4"
   },
   "devDependencies": {
     "gh-pages": "^0.12.0",

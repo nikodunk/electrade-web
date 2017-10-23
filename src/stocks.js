@@ -1,5 +1,6 @@
 import React from 'react';
 import $ from 'jquery'
+import yahooFinance from 'yahoo-finance'
 
 
 export default class Stocks extends React.Component {
@@ -7,14 +8,25 @@ export default class Stocks extends React.Component {
     super(props);
     this.state = {
       username: 'articles',
-      items: [{title: 'TSLA', price: '355.28', change: '-2.4'}]
+      items: [{symbol: 'TSLA', price: '355.28', change: -2.4}]
     };
   }
 
   componentWillMount() {
 
-      $.getJSON("http://finance.yahoo.com/webservice/v1/symbols/YHOO,AAPL/quote?format=json&view=detail", function(data){console.log(data)
-      })
+      yahooFinance.quote({
+        symbol: 'TSLA',
+        modules: [ 'price', 'summaryDetail' ] // see the docs for the full list
+      }, function (err, quotes) {
+        var _items = this.state.items.slice(0)
+        _items[0].change = quotes.price.regularMarketChangePercent
+        this.setState({items: _items})
+        
+      }.bind(this));
+        
+      
+      // $.getJSON("http://finance.yahoo.com/webservice/v1/symbols/YHOO,AAPL/quote?format=json&view=detail", function(data){console.log(data)
+      // })
 
       // $.ajax({
       //   method: "GET",
@@ -42,10 +54,8 @@ export default class Stocks extends React.Component {
     return (
       <div>
         {this.state.items.map(stock => (
-                  <div key={stock.title}>
-                      {stock.title} &nbsp; 
-                      <span class="source">{stock.price}</span> 
-                      <span>{stock.change}</span>
+                  <div key={stock.symbol}>
+                      {stock.symbol}  {stock.price} {stock.change}
                   </div>
                 ))}
       </div>

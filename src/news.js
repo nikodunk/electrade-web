@@ -84,8 +84,8 @@ export default class News extends React.Component {
                       </p> 
                     </div>
                     <div class="newsItemRight">
-                      <p>
-                        <TimeAgo class="time" date={article.published} />
+                      <p class="time">
+                        <TimeAgo date={article.published} />
                       </p>
                     </div>
                   </div>

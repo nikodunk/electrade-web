@@ -2,6 +2,8 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import News from './news'
 import Stocks from './stocks'
+import Crumbs from './crumbs'
+
 
 
 
@@ -14,11 +16,7 @@ export default class App extends React.Component{
   constructor(props) {
     super(props);
 
-    this.state = {
-              articles: [
-                  
-                ]
-        }
+    this.state = { articles: [ ] }
       
   }
 
@@ -33,7 +31,7 @@ export default class App extends React.Component{
     return (
           <div >
             <div class="title">
-              <b>electricFeed</b> | your real-time mobility & energy news aggregator
+              <b>sunboxlabs</b> is a real-time news aggregator for mobility & energy 
             </div>
             <div class="container">
               <div class="left">
@@ -45,7 +43,7 @@ export default class App extends React.Component{
                 <News />
               </div>
               <div class="right">
-                <b>guides</b>
+                  <Crumbs />
               </div>
             </div>
           </div>

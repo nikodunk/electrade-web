@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en-us">
+   
+
+
+
+   
+  <head>
+  <meta charset="UTF-8">
+  <title>sunboxlabs | sunboxlabs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#157878">
+  <link rel="stylesheet" href="/css/cayman.css">
+
+  
+    <meta property="og:url"                content="http://www.sunboxlabs.com" />
+    <meta property="og:type"               content="article" />
+    <meta property="og:title"              content="How to build a Personal Power Plant" />
+    <meta property="og:description"        content="A platform for sharing DIY solar experiments, discussion & learning. For off-grid apartments, for Burning Man, for camping, for RV." />
+    <meta property="og:image"              content="http://sunboxlabs.com/img/money3.jpg" />
+    <meta name="description" content="How to build a compact solar generator with parts from Amazon – for silent, fuel-free power. For off-grid home appliances, emergency backup, festivals and camping." />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@sunboxlabs" />
+    <meta name="twitter:title" content="How to build a Personal Power Plant" />
+    <meta name="twitter:description" content="A platform for sharing DIY solar experiments, discussion & learning. For off-grid apartments, for Burning Man, for camping, for RV." />
+    <meta name="twitter:image" content="http://sunboxlabs.com/img/money3.jpg" />
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+</head>
+
+
+
+
+
+<script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-103591436-1', 'auto');
+      ga('send', 'pageview');
+ </script>
+
+
+
+  <body>
+
+    
+
+
+
+    
+    <section class="main-content">
+      
+
+      <p style="text-align: center;">
+  <a href="/index.html">Back to overview</a>
+</p>
+
+<br><br><br>
+
+<div style="max-width: 600px; margin: auto">
+	<p style="text-align: center"><b>Project: Low-energy devices for an off-grid home</b></p>
+	<br>
+	<p>A lot of questions we receive here are as to what you can charge and how far the energy will reach. I thought this would be worth a separate, more in-depth analysis.</p>
+
+<p>What adjustments would living off a single 420Wh system require of your lifestyle?
+Worst energy culprits in my household are roughly in order of energy use: hot water tank for showers, stove/kettle, transportation, air heating, air cooling, fridge, dishwasher, washer/dryer, lighting. Living off 420wh a day requires replacing the culprits with lower-power parts (often intended for car, RV or marine use). At this point this project becomes very similar to the original inspiration for these projects - Robin Rhineharts <a href="https://arstechnica.com/gadgets/2015/08/op-ed-how-i-gave-up-alternating-current/" target="_blank">How I gave up alternating current</a> (Robin Rhinehart is the founder of Soylent). Replacing high-energy AC appliances with low-energy DC ones to stay within the 420Wh “budget”.</p>
+
+<p>Low-power thought experiment: How could we replace devices to live within the 420Wh solar personal power plant budget?</p>
+
+<p><b>Refrigeration</b>
+A large part of the baseload in apartments and houses is from the fridge. Obviously essential for a modern lifestyle (unless you order take-out a lot or live off powder), it’s the main power draw we can’t live without. That being said, existing fridges are often super in-efficient. Let’s replace it with a low-voltage car fridge!</p>
+<div style="margin: 0px auto !important; padding: 0px; width: 100% !important">
+	<table style="text-align: center; width: 100% !important">
+		<tr>
+			<td><img src="/img/devices/fridgebefore.jpg" style="max-height: 200px; margin: 0 auto; " /></td>
+			<td>&rarr;</td>
+			<td><img src="/img/devices/fridgeafter.jpg" style="max-height: 200px; margin: 0 auto;" /></td>
+		</tr>
+		<tr style="padding: 0px; margin: 0px">
+			<td style="width: 250px; padding: 0px; margin: 0px; font-size: .8rem"><b>1020W</b><br /> Frigidaire Gallery 22.2 Cu. Ft. Side-by-Side Refrigerator</td>
+			<td></td>
+			<td style="width: 250px; padding: 0px; margin: 0px; font-size: .8rem"><b>60W</b><br /> Low-voltage 12V car fridge (smaller size), no freezer.</td>
+		</tr>
+	</table>
+</div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>420Wh/d (60W * 7h)
+</code></pre></div></div>
+
+<p><b>Heat</b>
+The next-biggest baseload (at least in winter) is from heating. This is often oil-based, but (at least in San Francisco where old houses are terribly insulated) is often assisted with electric space-heaters. These are also incredibly in-efficient (as they’re often bargain-basement appliances). Let’s again replace with low-voltage car heaters!</p>
+
+<table style="text-align: center; margin: 0 auto; padding: 0px; width: 100%">
+	<tr>
+		<td><img src="/img/devices/heatbefore.jpg" style="max-height: 200px" /></td>
+		<td>&rarr;</td>
+		<td><img src="/img/devices/heatafter.jpg" style="max-height: 200px" /></td>
+	</tr>
+	<tr style="padding: 0px; margin: 0px">
+		<td style="width: 250px; padding: 0px; margin: 0px; font-size: .8rem"><b>1500W</b><br />Ceramic Space Heater</td>
+		<td></td>
+		<td style="width: 250px; padding: 0px; margin: 0px; font-size: .8rem"><b>150W</b><br /> Low-voltage 12V car heater</td>
+	</tr>
+</table>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>300Wh/d (2h * 150W)
+</code></pre></div></div>
+
+<p><b>Cooking</b></p>
+
+<table style="text-align: center; margin: 0 auto; padding: 0px; width: 100%">
+	<tr>
+		<td><img src="/img/devices/cookbefore.jpg" style="max-height: 200px" /></td>
+		<td>&rarr;</td>
+		<td><img src="/img/devices/cookafter.jpg" style="max-height: 200px" /></td>
+	</tr>
+	<tr style="padding: 0px; margin: 0px">
+		<td style="width: 250px; padding: 0px; margin: 0px; font-size: .8rem"><b>7000W</b><br />(3000W Range + 4000W Oven) Frigidaire Professional 30'' Electric</td>
+		<td></td>
+		<td style="width: 250px; padding: 0px; margin: 0px; font-size: .8rem"><b>144W</b><br /> Low-voltage 12V car cooker. Heats up to 300F – can cook rice, etc.</td>
+	</tr>
+</table>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>144Wh/d(1h * 144W)
+</code></pre></div></div>
+
+<p><b>Air Cooling</b></p>
+<table style="text-align: center; margin: 0 auto; padding: 0px; width: 100%">
+	<tr>
+		<td><img src="/img/devices/coolbefore.jpg" style="max-height: 200px" /></td>
+		<td>&rarr;</td>
+		<td><img src="/img/devices/coolafter.jpg" style="max-height: 200px" /></td>
+	</tr>
+	<tr style="padding: 0px; margin: 0px">
+		<td style="width: 250px; padding: 0px; margin: 0px; font-size: .8rem"><b>2425W</b><br />Frigidaire 25,000 BTU Room Air Conditioner</td>
+		<td></td>
+		<td style="width: 250px; padding: 0px; margin: 0px; font-size: .8rem"><b>45W</b><br /> Low-power Room Evaporative Cooler</td>
+	</tr>
+</table>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>405Wh/d (9h * 45W)
+</code></pre></div></div>
+
+<p><b>Transport</b></p>
+
+<table style="text-align: center; margin: 0 auto; padding: 0px; width: 100%">
+	<tr>
+		<td><img src="/img/devices/transportbefore.jpg" style="max-height: 200px" /></td>
+		<td>&rarr;</td>
+		<td><img src="/img/devices/transportafter.jpg" style="max-height: 200px" /></td>
+	</tr>
+	<tr style="padding: 0px; margin: 0px">
+		<td style="width: 250px; padding: 0px; margin: 0px; font-size: .8rem"><b>30,000Wh</b><br /> Nissan Leaf (or equivalent combustion engine)</td>
+		<td></td>
+		<td style="width: 250px; padding: 0px; margin: 0px; font-size: .8rem"><b>97Wh</b><br /> Electric skateboard/ebike (though I prefer a bike to stay in shape).</td>
+	</tr>
+</table>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>97Wh/d (1 charge/d)
+</code></pre></div></div>
+
+<p><b>Communication</b></p>
+
+<table style="text-align: center; margin: 0 auto; padding: 0px; width: 100%">
+	<tr>
+		<td><img src="/img/devices/macbookafter.jpg" style="max-height: 200px" /></td>
+	</tr>
+	<tr style="padding: 0px; margin: 0px">
+		<td style="width: 250px; padding: 0px; margin: 0px; font-size: .8rem"><b>77Wh</b><br />Laptop, Tablet, Phone. Not really an issue. Already low power.</td>
+	</tr>
+</table>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>67Wh/d+10Wh/d (1 charge each/d)	
+</code></pre></div></div>
+
+<p><b>Lighting</b></p>
+
+<table style="text-align: center; margin: 0 auto; padding: 0px; width: 100%">
+	<tr>
+		<td><img src="/img/devices/lightbefore.jpg" style="max-height: 200px" /></td>
+		<td>&rarr;</td>
+		<td><img src="/img/devices/lightafter.jpg" style="max-height: 200px" /></td>
+	</tr>
+	<tr style="padding: 0px; margin: 0px">
+		<td style="width: 250px; padding: 0px; margin: 0px; font-size: .8rem"><b>5W</b><br /> LED Lighting (or 15W CFLs or 60W Incandescents)</td>
+		<td></td>
+		<td style="width: 250px; padding: 0px; margin: 0px; font-size: .8rem"><b>5W</b><br /> LED Lighting</td>
+	</tr>
+</table>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>40Wh/d (2 lights * 4W * 5h)
+</code></pre></div></div>
+
+<p>Total energy required to use all devices above every day:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1483Wh/day, roughly 1.5kWh
+</code></pre></div></div>
+
+<p>This can be covered by 4 systems/personal power plants for roughly $880 dollars. Granted, we’d raise some eyebrows, but we wouldn’t be living like a hermit and it’d be as close as we could get to an off-grid DC-only lifestyle.</p>
+
+<p><br /><br />See all the devices listed above below. Note that all of them (apart from the evap cooler) run on DC, so you could theoretically leave off the AC inverter and run directly off 12V DC (shoot me an <a href="mailto:n.dunkel@gmail.com">email</a> if you have any questions).</p>
+
+<p>High-power devices in my household that have no low-power replacement yet:</p>
+<ul>
+  <li>Hot water tank: 4200W water heater =&gt; would have to be replaced with a solar water heater. This is a non-electric, purely mechanical system, similar to the system installed by Jimmy Carter on the white house in the 70s.</li>
+  <li>Dishwasher: Dishwasher =&gt; Hand wash dishes. Sorry y’all.</li>
+  <li>Washer/dryer: Washer/Dryer =&gt; Hand wash clothes and hang dry feasible?</li>
+</ul>
+
+<div style="text-align: center">
+<br /><br />
+<p style="color: orange;"><b>The kit</b></p>
+<div style="border: 5px solid orange; padding: 20px">      
+    
+
+LED Light (45Wh – usable 9h/day)<br /><br />
+
+<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&amp;OneJS=1&amp;Operation=GetAdHtml&amp;MarketPlace=US&amp;source=ss&amp;ref=as_ss_li_til&amp;ad_type=product_link&amp;tracking_id=gridlesskits-20&amp;marketplace=amazon&amp;region=US&amp;placement=B01CGBO1PK&amp;asins=B01CGBO1PK&amp;linkId=897405d3d9168c44b9e1a7e286688cef&amp;show_border=true&amp;link_opens_in_new_window=true"></iframe>
+
+
+<br /><br />Fridge (60W – usable 7h/day)<br /><br />
+<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&amp;OneJS=1&amp;Operation=GetAdHtml&amp;MarketPlace=US&amp;source=ss&amp;ref=as_ss_li_til&amp;ad_type=product_link&amp;tracking_id=gridlesskits-20&amp;marketplace=amazon&amp;region=US&amp;placement=B01LYFKZRT&amp;asins=B01LYFKZRT&amp;linkId=e92c933d9758b8c099f238f41564a426&amp;show_border=true&amp;link_opens_in_new_window=true"></iframe>
+
+
+<br /><br />Stove/Water Heater Replacement (144W – usable 3h/day)<br /><br />
+<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&amp;OneJS=1&amp;Operation=GetAdHtml&amp;MarketPlace=US&amp;source=ss&amp;ref=as_ss_li_til&amp;ad_type=product_link&amp;tracking_id=gridlesskits-20&amp;marketplace=amazon&amp;region=US&amp;placement=B00030DLEE&amp;asins=B00030DLEE&amp;linkId=c1ad8780c2ff97c70b0552ede3a188fc&amp;show_border=true&amp;link_opens_in_new_window=true"></iframe>
+
+
+<br /><br />Heating Replacement (150W – usable 3h/day)<br /><br />
+<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&amp;OneJS=1&amp;Operation=GetAdHtml&amp;MarketPlace=US&amp;source=ss&amp;ref=as_ss_li_til&amp;ad_type=product_link&amp;tracking_id=gridlesskits-20&amp;marketplace=amazon&amp;region=US&amp;placement=B0066CP998&amp;asins=B0066CP998&amp;linkId=a0e2501e85ef387463a34ad47fc7bf50&amp;show_border=true&amp;link_opens_in_new_window=true"></iframe>
+
+
+<br /><br />Air conditioning replacement (45W – usable 9h/day)<br /><br />
+<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&amp;OneJS=1&amp;Operation=GetAdHtml&amp;MarketPlace=US&amp;source=ss&amp;ref=as_ss_li_til&amp;ad_type=product_link&amp;tracking_id=gridlesskits-20&amp;marketplace=amazon&amp;region=US&amp;placement=B007SNQ4FM&amp;asins=B007SNQ4FM&amp;linkId=27d62ccbbbffd7fc82b74c49a8a9decd&amp;show_border=true&amp;link_opens_in_new_window=true"></iframe>
+
+
+<br /><br />Transport replacement (97Wh – get 4 charges/day)<br /><br />
+<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&amp;OneJS=1&amp;Operation=GetAdHtml&amp;MarketPlace=US&amp;source=ss&amp;ref=as_ss_li_til&amp;ad_type=product_link&amp;tracking_id=gridlesskits-20&amp;marketplace=amazon&amp;region=US&amp;placement=B01M0LI1CX&amp;asins=B01M0LI1CX&amp;linkId=06c13f012874ba7551caa030952afd19&amp;show_border=true&amp;link_opens_in_new_window=true"></iframe>
+
+                
+<br /><br />Communication (9W – usable 46h/day)<br /><br />
+<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&amp;OneJS=1&amp;Operation=GetAdHtml&amp;MarketPlace=US&amp;source=ss&amp;ref=as_ss_li_til&amp;ad_type=product_link&amp;tracking_id=gridlesskits-20&amp;marketplace=amazon&amp;region=US&amp;placement=B01LFSDZCU&amp;asins=B01LFSDZCU&amp;linkId=1783362acc517ede433c0fec058661c8&amp;show_border=true&amp;link_opens_in_new_window=true"></iframe>
+          
+          <p style="text-align: center"><i>Note: Ad-blockers will block the Amazon links above, so here's the plain text links:</i>
+            <br /><a href="http://amzn.to/2xqifTT" target="_blank" onclick="ga('send', 'event', 'Afflink', 'clicked', 'textlinks');">5W LED USB Lightbulbs (DC)</a>
+            <br /><a href="http://amzn.to/2fT4HKl" target="_blank" onclick="ga('send', 'event', 'Afflink', 'clicked', 'textlinks');">60W Mini-Fridge (DC)</a>
+	        <br /><a href="http://amzn.to/2y82JQe" target="_blank" onclick="ga('send', 'event', 'Afflink', 'clicked', 'textlinks');">144W Stove (DC)</a>
+		    <br /><a href="http://amzn.to/2yPs92D" target="_blank" onclick="ga('send', 'event', 'Afflink', 'clicked', 'textlinks');">150W Ceramic Space Heater (DC)</a>
+			<br /><a href="http://amzn.to/2xoQfVD" target="_blank" onclick="ga('send', 'event', 'Afflink', 'clicked', 'textlinks');">45W Evaporative Cooler (DC, but with AC brick)</a>
+			<br /><a href="http://amzn.to/2y87SI8" target="_blank" onclick="ga('send', 'event', 'Afflink', 'clicked', 'textlinks');">97Wh Electric Skateboard (DC, but with AC brick)</a>
+			<br /><a href="http://amzn.to/2y8G32p" target="_blank" onclick="ga('send', 'event', 'Afflink', 'clicked', 'textlinks');">9W Wifi (DC, but with AC brick)</a></p>
+ </div>
+<br /><br />
+</div>
+
+
+
+  	<br><br><br>
+	<p style="text-align: center;">
+	  <a href="/index.html">Back to overview</a>
+	</p>
+
+	<br><br><br><br><br><br>
+
+
+  	    
+
+</div>
+
+
+<div style="max-width: 1000px; margin: auto">
+
+	<hr>
+
+	<div id="disqus_thread"></div>
+	<script>
+	(function() { // DON'T EDIT BELOW THIS LINE
+	var d = document, s = d.createElement('script');
+	s.src = 'https://gridlesskits.disqus.com/embed.js';
+	s.setAttribute('data-timestamp', +new Date());
+	(d.head || d.body).appendChild(s);
+	})();
+	</script>
+	<br>
+   	<hr>   
+   	<br> 
+</div>
+
+
+
+      
+
+    </section>
+    
+    
+
+  
+
+
+<footer class="page-header" style="margin: 0 auto; padding-top: 60px; font-family: 'Verdana', sans-serif;">
+  
+<div style="text-align: left; margin: 0 auto; max-width: 1000px">
+    <p style="text-align: left">
+      <a href="/" style=" cursor: pointer; text-decoration: none; color: black">
+        <b>sunboxlabs</b> is a platform for sharing DIY solar projects. learn, share, build.
+      </a>
+      <form action="https://formspree.io/n.dunkel@gmail.com"
+      method="POST">
+          Submit new:
+          <input type="text" placeholder="link or story" name="name">
+          <input type="email" placeholder="your email" name="_replyto">
+          <input type="submit" value="Submit">
+      </form>
+    </p>
+    <hr style="height: 1px; border: 0; border-top: 1px solid #ccc;" />
+    <ol>
+      
+      <li style="line-height: 1.8rem"> 
+        <a href="/2017/06/20/200-apartment-solar-system.html">
+        Project: $200 Off-Grid Solar For Apartments 
+        </a>&nbsp;
+        <a style="color: orange; font-size: .8rem; margin-top: 0" href="/2017/06/20/200-apartment-solar-system.html#disqus_thread" onclick="ga('send', 'event', 'new-discuss', 'clicked', 'one');">
+        discuss
+        </a>
+      </li>
+      
+      <li style="line-height: 1.8rem"> 
+        <a href="/2017/09/06/burning-man-update.html">
+        Project: Burning Man System 
+        </a>&nbsp;
+        <a style="color: orange; font-size: .8rem; margin-top: 0" href="/2017/09/06/burning-man-update.html#disqus_thread" onclick="ga('send', 'event', 'new-discuss', 'clicked', 'one');">
+        discuss
+        </a>
+      </li>
+      
+      <li style="line-height: 1.8rem"> 
+        <a href="/2017/09/17/what-will-it-run.html">
+        Project: Low-energy devices for an off-grid home 
+        </a>&nbsp;
+        <a style="color: orange; font-size: .8rem; margin-top: 0" href="/2017/09/17/what-will-it-run.html#disqus_thread" onclick="ga('send', 'event', 'new-discuss', 'clicked', 'one');">
+        discuss
+        </a>
+      </li>
+      
+      <li style="line-height: 1.8rem"> 
+        <a href="/2017/09/30/box-update.html">
+        Project: Box Update 
+        </a>&nbsp;
+        <a style="color: orange; font-size: .8rem; margin-top: 0" href="/2017/09/30/box-update.html#disqus_thread" onclick="ga('send', 'event', 'new-discuss', 'clicked', 'one');">
+        discuss
+        </a>
+      </li>
+      
+      <li style="line-height: 1.8rem"> 
+        <a href="/2017/10/01/burning-man-solar-2.html">
+        Project: For Burning Man / Camping (Lithium battery) 
+        </a>&nbsp;
+        <a style="color: orange; font-size: .8rem; margin-top: 0" href="/2017/10/01/burning-man-solar-2.html#disqus_thread" onclick="ga('send', 'event', 'new-discuss', 'clicked', 'one');">
+        discuss
+        </a>
+      </li>
+      
+      <li style="line-height: 1.8rem"> 
+        <a href="/2017/10/07/solarpi.html">
+        Project: SolarPi 
+        </a>&nbsp;
+        <a style="color: orange; font-size: .8rem; margin-top: 0" href="/2017/10/07/solarpi.html#disqus_thread" onclick="ga('send', 'event', 'new-discuss', 'clicked', 'one');">
+        discuss
+        </a>
+      </li>
+      
+      <li style="line-height: 1.8rem"> 
+        <a href="/2017/10/07/stock-sunjack-in-window.html">
+        Project: sunjack stock in window 
+        </a>&nbsp;
+        <a style="color: orange; font-size: .8rem; margin-top: 0" href="/2017/10/07/stock-sunjack-in-window.html#disqus_thread" onclick="ga('send', 'event', 'new-discuss', 'clicked', 'one');">
+        discuss
+        </a>
+      </li>
+      
+      <li style="line-height: 1.8rem"> 
+        <a href="/2017/10/08/question-pipe.html">
+        Question: Is it possible to 'pipe' sunlight through (thick) optical fibers, to take it 5 floors down from the roof? 
+        </a>&nbsp;
+        <a style="color: orange; font-size: .8rem; margin-top: 0" href="/2017/10/08/question-pipe.html#disqus_thread" onclick="ga('send', 'event', 'new-discuss', 'clicked', 'one');">
+        discuss
+        </a>
+      </li>
+      
+      <li style="line-height: 1.8rem"> 
+        <a href="/2017/10/08/request-diy-greenhouse.html">
+        Request: DIY Greenhouse + Solar 
+        </a>&nbsp;
+        <a style="color: orange; font-size: .8rem; margin-top: 0" href="/2017/10/08/request-diy-greenhouse.html#disqus_thread" onclick="ga('send', 'event', 'new-discuss', 'clicked', 'one');">
+        discuss
+        </a>
+      </li>
+      
+      <li style="line-height: 1.8rem"> 
+        <a href="/2017/10/08/request-eurozone.html">
+        Request: a basic set available from an online shop in europe/the euro zone. 
+        </a>&nbsp;
+        <a style="color: orange; font-size: .8rem; margin-top: 0" href="/2017/10/08/request-eurozone.html#disqus_thread" onclick="ga('send', 'event', 'new-discuss', 'clicked', 'one');">
+        discuss
+        </a>
+      </li>
+      
+      <li style="line-height: 1.8rem"> 
+        <a href="/2017/10/08/request-hurricane.html">
+        Request: Hurricane Backup System 
+        </a>&nbsp;
+        <a style="color: orange; font-size: .8rem; margin-top: 0" href="/2017/10/08/request-hurricane.html#disqus_thread" onclick="ga('send', 'event', 'new-discuss', 'clicked', 'one');">
+        discuss
+        </a>
+      </li>
+      
+      <li style="line-height: 1.8rem"> 
+        <a href="/2017/10/09/hurricane.html">
+        Project: Hurricane Solar Lighting 
+        </a>&nbsp;
+        <a style="color: orange; font-size: .8rem; margin-top: 0" href="/2017/10/09/hurricane.html#disqus_thread" onclick="ga('send', 'event', 'new-discuss', 'clicked', 'one');">
+        discuss
+        </a>
+      </li>
+      
+      <li style="line-height: 1.8rem"> 
+        <a href="/2017/10/10/build-it.html">
+        Link: More than 500 renewable energy and conservation projects you can build 
+        </a>&nbsp;
+        <a style="color: orange; font-size: .8rem; margin-top: 0" href="/2017/10/10/build-it.html#disqus_thread" onclick="ga('send', 'event', 'new-discuss', 'clicked', 'one');">
+        discuss
+        </a>
+      </li>
+      
+      <li style="line-height: 1.8rem"> 
+        <a href="/2017/10/10/check-reddit.html">
+        Link: The Reddit DIY Community 
+        </a>&nbsp;
+        <a style="color: orange; font-size: .8rem; margin-top: 0" href="/2017/10/10/check-reddit.html#disqus_thread" onclick="ga('send', 'event', 'new-discuss', 'clicked', 'one');">
+        discuss
+        </a>
+      </li>
+      
+      <li style="line-height: 1.8rem"> 
+        <a href="/2017/10/10/desert-power.html">
+        Link: Desert power (without lots of generators) 
+        </a>&nbsp;
+        <a style="color: orange; font-size: .8rem; margin-top: 0" href="/2017/10/10/desert-power.html#disqus_thread" onclick="ga('send', 'event', 'new-discuss', 'clicked', 'one');">
+        discuss
+        </a>
+      </li>
+      
+      <li style="line-height: 1.8rem"> 
+        <a href="/2017/10/10/full-rv.html">
+        Link: Full RV Solar & Inverter Install ~ From Start To Finish (Video) 
+        </a>&nbsp;
+        <a style="color: orange; font-size: .8rem; margin-top: 0" href="/2017/10/10/full-rv.html#disqus_thread" onclick="ga('send', 'event', 'new-discuss', 'clicked', 'one');">
+        discuss
+        </a>
+      </li>
+      
+      <li style="line-height: 1.8rem"> 
+        <a href="/2017/10/10/hackaday-solar.html">
+        Link: Hackaday Solar Projects 
+        </a>&nbsp;
+        <a style="color: orange; font-size: .8rem; margin-top: 0" href="/2017/10/10/hackaday-solar.html#disqus_thread" onclick="ga('send', 'event', 'new-discuss', 'clicked', 'one');">
+        discuss
+        </a>
+      </li>
+      
+      <li style="line-height: 1.8rem"> 
+        <a href="/2017/10/11/blockchain.html">
+        Link: $34 Million: Australian Blockchain Startup Power Ledger Completes ICO  
+        </a>&nbsp;
+        <a style="color: orange; font-size: .8rem; margin-top: 0" href="/2017/10/11/blockchain.html#disqus_thread" onclick="ga('send', 'event', 'new-discuss', 'clicked', 'one');">
+        discuss
+        </a>
+      </li>
+      
+      <li style="line-height: 1.8rem"> 
+        <a href="/2017/10/16/solar-smartwatch.html">
+        Link: LunaR, the world’s first solar powered smartwatch.  
+        </a>&nbsp;
+        <a style="color: orange; font-size: .8rem; margin-top: 0" href="/2017/10/16/solar-smartwatch.html#disqus_thread" onclick="ga('send', 'event', 'new-discuss', 'clicked', 'one');">
+        discuss
+        </a>
+      </li>
+      
+    </ol>
+                                              
+<br><br><br>                                                     
+<iframe src="https://upscri.be/a543df/" style="border: 0;" width="100%"></iframe>
+                                                               
+<br><br><br><br><br>
+
+
+
+
+
+  	<p style="font-size: .7rem; color: grey">site monetized with <a href="http://viglink.com/?vgref=3160688" target="_blank">viglink</a></p>
+</footer>
+<script id="dsq-count-scr" src="//gridlesskits.disqus.com/count.js" async></script>
+<script type="text/javascript">
+  var vglnk = { key: '645728cd6d815e3890d53f3b16f562cd' };
+
+  (function(d, t) {
+    var s = d.createElement(t); s.type = 'text/javascript'; s.async = true;
+    s.src = '//cdn.viglink.com/api/vglnk.js';
+    var r = d.getElementsByTagName(t)[0]; r.parentNode.insertBefore(s, r);
+  }(document, 'script'));
+</script>
+
+    
+  </body>
+</html>

@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en-us">
+   
+
+
+
+   
+  <head>
+  <meta charset="UTF-8">
+  <title>sunboxlabs | sunboxlabs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#157878">
+  <link rel="stylesheet" href="/css/cayman.css">
+
+  
+    <meta property="og:url"                content="http://www.sunboxlabs.com" />
+    <meta property="og:type"               content="article" />
+    <meta property="og:title"              content="How to build a Personal Power Plant" />
+    <meta property="og:description"        content="A platform for sharing DIY solar experiments, discussion & learning. For off-grid apartments, for Burning Man, for camping, for RV." />
+    <meta property="og:image"              content="http://sunboxlabs.com/img/money3.jpg" />
+    <meta name="description" content="How to build a compact solar generator with parts from Amazon – for silent, fuel-free power. For off-grid home appliances, emergency backup, festivals and camping." />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@sunboxlabs" />
+    <meta name="twitter:title" content="How to build a Personal Power Plant" />
+    <meta name="twitter:description" content="A platform for sharing DIY solar experiments, discussion & learning. For off-grid apartments, for Burning Man, for camping, for RV." />
+    <meta name="twitter:image" content="http://sunboxlabs.com/img/money3.jpg" />
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+</head>
+
+
+
+
+
+<script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-103591436-1', 'auto');
+      ga('send', 'pageview');
+ </script>
+
+
+
+  <body>
+
+    
+
+
+
+    
+    <section class="main-content">
+      
+
+      <p style="text-align: center;">
+  <a href="/index.html">Back to overview</a>
+</p>
+
+<br><br><br>
+
+<div style="max-width: 600px; margin: auto">
+	<p style="text-align: center"><b>Project: Hurricane Solar Lighting</b></p>
+	<br>
+	<p>I’ve spent my entire life living on or near the Gulf Coast. And even though we’ve had a couple of seasons with no major hurricanes, I can’t help thinking about them this time of year. Of course, the big storms are very dangerous and most people should evacuate to safer ground. But those who stay and those who return afterward, are often faced with a loss of electrical power. Even some relatively minor storms can cause power outages.</p>
+
+<p style="text-align: center"><img style="max-height: 500px;" src="/img/mike/mike1.jpg" /></p>
+
+<p>Power outages suck! Sure we have candles, lanterns, and flashlights, but you have to either station these items in each room or carry them around with you. I was trying to think of some way to have lights in every room of the house in the event of a power outage and, naturally, solar came to mind.</p>
+
+<p>I would love to outfit my house with a complete solar system that produces 5 or 10 kW of power, but I’m not quite ready to make that investment. So I needed a quick, easy way to have lights all over the house, plus the ability to run other small devices such as fans and a couple of phone chargers.</p>
+
+<p>I was walking around my house from room to room thinking about this and it hit me; phone jacks! Even though I haven’t had a landline phone in years, there are phone lines run throughout the house and a handy little wall jack in each room. Why couldn’t I use this wiring to provide low voltage solar lighting in the event of a power outage?</p>
+
+<p>Well, the first reason is I didn’t know if I could legally disconnect the wires inside my house from the phone company’s junction box outside. So I called my local phone company office and asked. Turns out there’s a customer disconnect right there on the side of the house. They said I can disconnect my house from their line and everything on my side is my property. Awesome!</p>
+
+<p>The second reason is the wire size. Typical phone cables are between 22 and 26 gauge, which means the current capacity is very limited. But I did some research and found that there are all shapes and sizes (and wattages) of 12 volt light bulbs out there and the LED bulbs come is sizes as low as 2 or 3 watts.</p>
+
+<p>Based on the information I found at http://www.engineeringtoolbox.com/wire-gauges-d_419.html I should be able to safely run 3.5 amps through a 24 gauge wire. At 12 volts, that comes to 42 watts. However, since I don’t know the length of the wire in the walls, I decided to play it safe and keep it to a maximum of 2-3 amps, which still gives me 24-36 watts to work with.</p>
+
+<p>So I decided to configure a low-end solar system using mostly items I had on hand or could buy locally. What follows is a detailed description of this project. I hope you like it!</p>
+
+<p>UPDATE: I added an inline fuse between the charge controller LOAD (+) lead and the phone line just in case somebody plugs in too heavy a load.</p>
+
+<p>UPDATE: Due to lots of helpful suggestions (and a few outright warnings) regarding my choice of a 110 volt plug for the power outlet, I decided to add some optional 12 volt outlets to the project. Please see Steps 1 &amp; 3 for details.</p>
+
+<p><b>Step 1: Materials</b></p>
+
+<p>Here’s the list of parts I used:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1 - 12x12x6 PVC Junction box (from Lowes)
+2 - 15 watt solar panels
+2 - 12 volt 14Ah batteries
+1 - 12 volt, 3 watt LED light bulb
+1 - 100 watt solar charge controller (from Harbor Freight)
+1 - Solar Power Connection Kit (from Harbor Freight)
+10 - feet - 1/2" PVC
+6 - feet - 1/2" Flexible tubing
+1 - outdoor round box w/ 1/2" knockouts (for flood light)
+1 - outdoor light kit (for one flood light)
+4 - 1/2" PVC threaded male adapters
+2 - 1/2" PVC 90s
+3 - 1/2" PVC couplings
+3 - 1/2" PVC 2-hole straps
+1 - Weatherproof switch box
+1 - Single Pole light switch
+1 - Weatherproof switch cover
+6 - Receptacle wall outlets
+</code></pre></div></div>
+
+<p>UPDATE: I added an inline fuse between the charge controller LOAD (+) lead and the phone line just in case somebody plugs in too heavy a load.</p>
+
+<p>1 - Inline fuse holder and 3 amp fuse</p>
+
+<p>UPDATE: Due to lots of helpful suggestions (and a few outright warnings) regarding my choice of a 110 volt plug for the power outlet, I decided to add some optional 12 volt outlets to the project.</p>
+
+<p><b>Step 2: Rewire Phone Company Junction Box</b></p>
+
+<p>First I disconnected the phone company’s line jack. Then I wired in a length of 2-conductor thermostat wire (18 gauge) that will eventually be connected to my solar power source. I routed the thermostat wire up to the eve with tie wraps and cable clips.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center"><img src="/img/mike/mike25.jpg" alt="" /></th>
+      <th style="text-align: center"><img src="/img/mike/mike26.jpg" alt="" /></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><b>Step 3: Replace Phone Jacks With Recepticle Outlets</b></p>
+
+<p>Rather than buy special 12 volt table lamps or rewire existing lamps to plug into a phone jack, I decided to just use my existing ones as they are. So, I wired regular wall outlets into the phone jack boxes and just swapped the AC light bulbs in the lamps with 12 volt bulbs. It turns out you can buy 12 volt LED bulbs with a regular sized (medium) base. Here are a few examples:</p>
+
+<p>http://www.theledlight.com/12volt-led-bulb.html,</p>
+
+<p>http://www.superbrightleds.com/moreinfo/led-spot-f…</p>
+
+<p>http://www.lightexports.com/servlet/the-8423/8W-LE…</p>
+
+<p>I used a 3 watt LED bulb in my testing. It actually gives off an impressive amount of light for such a low wattage bulb. I’ve ordered some higher wattage bulbs to compare the results.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center"><img src="/img/mike/mike24.jpg" alt="" /></th>
+      <th style="text-align: center"><img src="/img/mike/mike7.jpg" alt="" /></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>CAUTION: If you build this, please remember to always remove the 12 volt bulb before you plug the lamp back into 110 volts.</p>
+
+<p>UPDATE: I added an inline fuse between the charge controller LOAD (+) lead and the phone line just in case somebody plugs in too heavy a load.</p>
+
+<p>UPDATE: Due to lots of helpful suggestions (and a few outright warnings) regarding my choice of a 110 volt plug for the power outlet, I decided to add some optional 12 volt outlets to the project.</p>
+
+<p><b>Step 4: My Solar Power Source</b></p>
+
+<p>I’ve been experimenting with solar energy for a while now, so I had a couple of 15 watt panels and 12 volt batteries on hand. I decided to use what I had for my initial installation. I may decide to add more panels and/or batteries later to run more stuff.</p>
+
+<p>I bought a 100 watt solar charge controller from Harbor Freight. I’m sure it’s not the best controller on the market, but it only cost $25 and seems to work fine for this project. I also bought their cable connection kit, which I used to connect the solar panels to the controller. I also used the 12 volt female barrel cable as a 12 volt outlet for connecting other devices (see below).</p>
+
+<p>I needed a box to hold the batteries, the controller, and all of the wiring connections. So, I bought a 12”x12”x6” PVC junction box from Lowes to do the trick. I wired the solar panels in parallel and the batteries in parallel. So my voltage remains at 12 volts, but my current capacity (charging time) and battery time improve.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center"><img src="/img/mike/mike11.jpg" alt="" /></th>
+      <th style="text-align: center"><img src="/img/mike/mike20.jpg" alt="" /></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center"><img src="/img/mike/mike23.jpg" alt="" /></th>
+      <th style="text-align: center"><img src="/img/mike/mike27.jpg" alt="" /></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>While I was adding the indoor lighting, I decided to add an outdoor floodlight and a 12 volt barrel jack to the project as well. The outdoor light was something I’ve been needing anyway. The 12 volt jack will be great for running other devices during a power outage including phone chargers, fans, and even a plug-in inverter for running 110 volt appliances.</p>
+
+<p>Since the flood light would be situated between the phone box and the control box and also happed to be close to where the solar panels would be located, the flood light box seemed like the perfect place to wire everything together.</p>
+
+<p>So, I ran the thermostat wire from the telephone box, the solar panel wires, and three pair of wires from the control box into the flood light box. I wired the solar panels in parallel and connected them to a single pair of wires feeding down to the control box. Then, I feed the phone box wires and switch leg for the flood light down to the control box using thermostat wire.</p>
+
+<p>In the control box, I wired the batteries in parallel and to the charge controller’s BATT connector. Then, I attached the 2-conductor wire from the solar panels to the charge controller’s SOLAR connector. And finally, I wired the phone box wires and the switch leg for the flood light to the controller’s LOAD connector.</p>
+
+<p>IMPORTANT: Make sure you watch the polarity on these connections as you should always do with DC power.</p>
+
+<p>Also IMPORTANT: I don’t know if it’s an anomaly or not, but the Harbor Freight charge controller I bought has the polarity backwards on a couple of the connections. Make sure the LEDs light when you connect your batteries and solar panels to ensure proper polarity.</p>
+
+<p>UPDATE: I added an inline fuse between the charge controller LOAD (+) lead and the phone line just in case somebody plugs in too heavy a load.</p>
+
+<p>UPDATE: Due to lots of helpful suggestions (and a few outright warnings) regarding my choice of a 110 volt plug for the power outlet, I decided to add some optional 12 volt outlets to the project. Please see Steps 1 &amp; 3 for details.</p>
+
+<p><b>Step 5: Testing It Out</b></p>
+
+<p>The outside flood light works great in day or night conditions as you can see from the first two photos. I ordered a higher wattage bulb to use there, but you can see even the little 3 watt bulb puts out a decent amount of light.</p>
+
+<p>The next photo shows my standard table lamp plugged into the 110 volt outlet with a 13 watt CFL bulb. In the last photo, I replaced the bulb with the 12 volt 3 watt LED bulb and plugged the lamp into the 12 volt solar outlet. As you can see, it works great!</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center"><img src="/img/mike/mike1.jpg" alt="" /></th>
+      <th style="text-align: center"><img src="/img/mike/mike18.jpg" alt="" /></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center"><img src="/img/mike/mike5.jpg" alt="" /></th>
+      <th style="text-align: center"><img src="/img/mike/mike6.jpg" alt="" /></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>CAUTION: If you build this, please remember to always remove the 12 volt bulb before you plug the lamp back into 110 volts. I almost forgot to do it while taking these photos. That would have been a big mistake!</p>
+
+<p>UPDATE: I added an inline fuse between the charge controller LOAD (+) lead and the phone line just in case somebody plugs in too heavy a load.</p>
+
+<p>UPDATE: Due to lots of helpful suggestions (and a few outright warnings) regarding my choice of a 110 volt plug for the power outlet, I decided to add some optional 12 volt outlets to the project. Please see Steps 1 &amp; 3 for details.</p>
+
+<p>So there’s my project. Like most people on the Gulf Coast, I hope we have another mild hurricane season this year. But if we do have a power outage, I’ll be more prepared than most!</p>
+
+<p>Plus, since I have this system up and running anyway, I might as well use it now and save a little bit of fossil fuel. So tonight, I’m turning my solar lamps ON and my grid-powered lamps OFF!</p>
+
+<p>Note: reposted with the author’s permission from <a href="http://www.instructables.com/id/Solar-Hurricane-Lighting-and-more/" target="_blank">here</a></p>
+
+
+
+  	<br><br><br>
+	<p style="text-align: center;">
+	  <a href="/index.html">Back to overview</a>
+	</p>
+
+	<br><br><br><br><br><br>
+
+
+  	    
+
+</div>
+
+
+<div style="max-width: 1000px; margin: auto">
+
+	<hr>
+
+	<div id="disqus_thread"></div>
+	<script>
+	(function() { // DON'T EDIT BELOW THIS LINE
+	var d = document, s = d.createElement('script');
+	s.src = 'https://gridlesskits.disqus.com/embed.js';
+	s.setAttribute('data-timestamp', +new Date());
+	(d.head || d.body).appendChild(s);
+	})();
+	</script>
+	<br>
+   	<hr>   
+   	<br> 
+</div>
+
+
+
+      
+
+    </section>
+    
+    
+
+  
+
+
+<footer class="page-header" style="margin: 0 auto; padding-top: 60px; font-family: 'Verdana', sans-serif;">
+  
+<div style="text-align: left; margin: 0 auto; max-width: 1000px">
+    <p style="text-align: left">
+      <a href="/" style=" cursor: pointer; text-decoration: none; color: black">
+        <b>sunboxlabs</b> is a platform for sharing DIY solar projects. learn, share, build.
+      </a>
+      <form action="https://formspree.io/n.dunkel@gmail.com"
+      method="POST">
+          Submit new:
+          <input type="text" placeholder="link or story" name="name">
+          <input type="email" placeholder="your email" name="_replyto">
+          <input type="submit" value="Submit">
+      </form>
+    </p>
+    <hr style="height: 1px; border: 0; border-top: 1px solid #ccc;" />
+    <ol>
+      
+      <li style="line-height: 1.8rem"> 
+        <a href="/2017/06/20/200-apartment-solar-system.html">
+        Project: $200 Off-Grid Solar For Apartments 
+        </a>&nbsp;
+        <a style="color: orange; font-size: .8rem; margin-top: 0" href="/2017/06/20/200-apartment-solar-system.html#disqus_thread" onclick="ga('send', 'event', 'new-discuss', 'clicked', 'one');">
+        discuss
+        </a>
+      </li>
+      
+      <li style="line-height: 1.8rem"> 
+        <a href="/2017/09/06/burning-man-update.html">
+        Project: Burning Man System 
+        </a>&nbsp;
+        <a style="color: orange; font-size: .8rem; margin-top: 0" href="/2017/09/06/burning-man-update.html#disqus_thread" onclick="ga('send', 'event', 'new-discuss', 'clicked', 'one');">
+        discuss
+        </a>
+      </li>
+      
+      <li style="line-height: 1.8rem"> 
+        <a href="/2017/09/17/what-will-it-run.html">
+        Project: Low-energy devices for an off-grid home 
+        </a>&nbsp;
+        <a style="color: orange; font-size: .8rem; margin-top: 0" href="/2017/09/17/what-will-it-run.html#disqus_thread" onclick="ga('send', 'event', 'new-discuss', 'clicked', 'one');">
+        discuss
+        </a>
+      </li>
+      
+      <li style="line-height: 1.8rem"> 
+        <a href="/2017/09/30/box-update.html">
+        Project: Box Update 
+        </a>&nbsp;
+        <a style="color: orange; font-size: .8rem; margin-top: 0" href="/2017/09/30/box-update.html#disqus_thread" onclick="ga('send', 'event', 'new-discuss', 'clicked', 'one');">
+        discuss
+        </a>
+      </li>
+      
+      <li style="line-height: 1.8rem"> 
+        <a href="/2017/10/01/burning-man-solar-2.html">
+        Project: For Burning Man / Camping (Lithium battery) 
+        </a>&nbsp;
+        <a style="color: orange; font-size: .8rem; margin-top: 0" href="/2017/10/01/burning-man-solar-2.html#disqus_thread" onclick="ga('send', 'event', 'new-discuss', 'clicked', 'one');">
+        discuss
+        </a>
+      </li>
+      
+      <li style="line-height: 1.8rem"> 
+        <a href="/2017/10/07/solarpi.html">
+        Project: SolarPi 
+        </a>&nbsp;
+        <a style="color: orange; font-size: .8rem; margin-top: 0" href="/2017/10/07/solarpi.html#disqus_thread" onclick="ga('send', 'event', 'new-discuss', 'clicked', 'one');">
+        discuss
+        </a>
+      </li>
+      
+      <li style="line-height: 1.8rem"> 
+        <a href="/2017/10/07/stock-sunjack-in-window.html">
+        Project: sunjack stock in window 
+        </a>&nbsp;
+        <a style="color: orange; font-size: .8rem; margin-top: 0" href="/2017/10/07/stock-sunjack-in-window.html#disqus_thread" onclick="ga('send', 'event', 'new-discuss', 'clicked', 'one');">
+        discuss
+        </a>
+      </li>
+      
+      <li style="line-height: 1.8rem"> 
+        <a href="/2017/10/08/question-pipe.html">
+        Question: Is it possible to 'pipe' sunlight through (thick) optical fibers, to take it 5 floors down from the roof? 
+        </a>&nbsp;
+        <a style="color: orange; font-size: .8rem; margin-top: 0" href="/2017/10/08/question-pipe.html#disqus_thread" onclick="ga('send', 'event', 'new-discuss', 'clicked', 'one');">
+        discuss
+        </a>
+      </li>
+      
+      <li style="line-height: 1.8rem"> 
+        <a href="/2017/10/08/request-diy-greenhouse.html">
+        Request: DIY Greenhouse + Solar 
+        </a>&nbsp;
+        <a style="color: orange; font-size: .8rem; margin-top: 0" href="/2017/10/08/request-diy-greenhouse.html#disqus_thread" onclick="ga('send', 'event', 'new-discuss', 'clicked', 'one');">
+        discuss
+        </a>
+      </li>
+      
+      <li style="line-height: 1.8rem"> 
+        <a href="/2017/10/08/request-eurozone.html">
+        Request: a basic set available from an online shop in europe/the euro zone. 
+        </a>&nbsp;
+        <a style="color: orange; font-size: .8rem; margin-top: 0" href="/2017/10/08/request-eurozone.html#disqus_thread" onclick="ga('send', 'event', 'new-discuss', 'clicked', 'one');">
+        discuss
+        </a>
+      </li>
+      
+      <li style="line-height: 1.8rem"> 
+        <a href="/2017/10/08/request-hurricane.html">
+        Request: Hurricane Backup System 
+        </a>&nbsp;
+        <a style="color: orange; font-size: .8rem; margin-top: 0" href="/2017/10/08/request-hurricane.html#disqus_thread" onclick="ga('send', 'event', 'new-discuss', 'clicked', 'one');">
+        discuss
+        </a>
+      </li>
+      
+      <li style="line-height: 1.8rem"> 
+        <a href="/2017/10/09/hurricane.html">
+        Project: Hurricane Solar Lighting 
+        </a>&nbsp;
+        <a style="color: orange; font-size: .8rem; margin-top: 0" href="/2017/10/09/hurricane.html#disqus_thread" onclick="ga('send', 'event', 'new-discuss', 'clicked', 'one');">
+        discuss
+        </a>
+      </li>
+      
+      <li style="line-height: 1.8rem"> 
+        <a href="/2017/10/10/build-it.html">
+        Link: More than 500 renewable energy and conservation projects you can build 
+        </a>&nbsp;
+        <a style="color: orange; font-size: .8rem; margin-top: 0" href="/2017/10/10/build-it.html#disqus_thread" onclick="ga('send', 'event', 'new-discuss', 'clicked', 'one');">
+        discuss
+        </a>
+      </li>
+      
+      <li style="line-height: 1.8rem"> 
+        <a href="/2017/10/10/check-reddit.html">
+        Link: The Reddit DIY Community 
+        </a>&nbsp;
+        <a style="color: orange; font-size: .8rem; margin-top: 0" href="/2017/10/10/check-reddit.html#disqus_thread" onclick="ga('send', 'event', 'new-discuss', 'clicked', 'one');">
+        discuss
+        </a>
+      </li>
+      
+      <li style="line-height: 1.8rem"> 
+        <a href="/2017/10/10/desert-power.html">
+        Link: Desert power (without lots of generators) 
+        </a>&nbsp;
+        <a style="color: orange; font-size: .8rem; margin-top: 0" href="/2017/10/10/desert-power.html#disqus_thread" onclick="ga('send', 'event', 'new-discuss', 'clicked', 'one');">
+        discuss
+        </a>
+      </li>
+      
+      <li style="line-height: 1.8rem"> 
+        <a href="/2017/10/10/full-rv.html">
+        Link: Full RV Solar & Inverter Install ~ From Start To Finish (Video) 
+        </a>&nbsp;
+        <a style="color: orange; font-size: .8rem; margin-top: 0" href="/2017/10/10/full-rv.html#disqus_thread" onclick="ga('send', 'event', 'new-discuss', 'clicked', 'one');">
+        discuss
+        </a>
+      </li>
+      
+      <li style="line-height: 1.8rem"> 
+        <a href="/2017/10/10/hackaday-solar.html">
+        Link: Hackaday Solar Projects 
+        </a>&nbsp;
+        <a style="color: orange; font-size: .8rem; margin-top: 0" href="/2017/10/10/hackaday-solar.html#disqus_thread" onclick="ga('send', 'event', 'new-discuss', 'clicked', 'one');">
+        discuss
+        </a>
+      </li>
+      
+      <li style="line-height: 1.8rem"> 
+        <a href="/2017/10/11/blockchain.html">
+        Link: $34 Million: Australian Blockchain Startup Power Ledger Completes ICO  
+        </a>&nbsp;
+        <a style="color: orange; font-size: .8rem; margin-top: 0" href="/2017/10/11/blockchain.html#disqus_thread" onclick="ga('send', 'event', 'new-discuss', 'clicked', 'one');">
+        discuss
+        </a>
+      </li>
+      
+      <li style="line-height: 1.8rem"> 
+        <a href="/2017/10/16/solar-smartwatch.html">
+        Link: LunaR, the world’s first solar powered smartwatch.  
+        </a>&nbsp;
+        <a style="color: orange; font-size: .8rem; margin-top: 0" href="/2017/10/16/solar-smartwatch.html#disqus_thread" onclick="ga('send', 'event', 'new-discuss', 'clicked', 'one');">
+        discuss
+        </a>
+      </li>
+      
+    </ol>
+                                              
+<br><br><br>                                                     
+<iframe src="https://upscri.be/a543df/" style="border: 0;" width="100%"></iframe>
+                                                               
+<br><br><br><br><br>
+
+
+
+
+
+  	<p style="font-size: .7rem; color: grey">site monetized with <a href="http://viglink.com/?vgref=3160688" target="_blank">viglink</a></p>
+</footer>
+<script id="dsq-count-scr" src="//gridlesskits.disqus.com/count.js" async></script>
+<script type="text/javascript">
+  var vglnk = { key: '645728cd6d815e3890d53f3b16f562cd' };
+
+  (function(d, t) {
+    var s = d.createElement(t); s.type = 'text/javascript'; s.async = true;
+    s.src = '//cdn.viglink.com/api/vglnk.js';
+    var r = d.getElementsByTagName(t)[0]; r.parentNode.insertBefore(s, r);
+  }(document, 'script'));
+</script>
+
+    
+  </body>
+</html>

@@ -1,5 +1,5 @@
 import React from 'react';
-
+import $ from 'jquery'
 
 
 export default class Stocks extends React.Component {
@@ -12,13 +12,19 @@ export default class Stocks extends React.Component {
   }
 
   componentWillMount() {
- 
-      console.log(this.state.items)
 
+      $.getJSON("http://finance.yahoo.com/webservice/v1/symbols/YHOO,AAPL/quote?format=json&view=detail", function(data){console.log(data)
+      })
+
+      // $.ajax({
+      //   method: "GET",
+      //   url: "http://finance.yahoo.com/webservice/v1/symbols/TSLA?format=json",
+      //   dataType: "application/json",
+      //   success: function(data){
+      //       console.log('worked with this:' + data)
+      //     }
+      // })
   }
-
-
-
 
 
 
@@ -36,14 +42,10 @@ export default class Stocks extends React.Component {
     return (
       <div>
         {this.state.items.map(stock => (
-                  <div>
-                    <p style={{paddingLeft: 10}}>
+                  <div key={stock.title}>
                       {stock.title} &nbsp; 
                       <span class="source">{stock.price}</span> 
-                      &nbsp;&nbsp;&nbsp;
-                      <span>
-                        {stock.change}
-                      </span></p>
+                      <span>{stock.change}</span>
                   </div>
                 ))}
       </div>

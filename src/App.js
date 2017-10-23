@@ -26,10 +26,6 @@ export default class App extends React.Component{
 
 
 
-      // $.get('http://finance.yahoo.com/webservice/v1/symbols/allcurrencies/quote?format=json', function (data) {
-      //     console.log(data)
-      // });
-
 
   }
   
@@ -37,7 +33,7 @@ export default class App extends React.Component{
     return (
           <div >
             <div class="title">
-              <b>electricFeed</b> your real-time updates on the solarization of the world
+              <b>electricFeed</b> | your real-time mobility & energy news aggregator
             </div>
             <div class="container">
               <div class="left">

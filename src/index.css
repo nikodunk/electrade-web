@@ -11,6 +11,7 @@ body {
 
 .source {
 	color: grey;
+	font-size: .8rem;
 	
 }
 
@@ -51,11 +52,9 @@ hr {
 .right{
 	
 	padding: 10px;
-	flex: 1;
-	border-left: solid 1px lightgrey;
-	
+	flex: 3;
+	border-left: solid 1px lightgrey;	
 }
-
 
 .title {
 	padding: 10px;
@@ -63,4 +62,13 @@ hr {
 
 .newsItem{
 	border-bottom: solid 1px lightgrey;
+	padding-left: 10px;
+	display: flex;
+}
+
+
+.newsItemRight{
+	min-width: 100px;
+	text-align: right;
+	margin-left: auto;
 }

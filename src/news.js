@@ -35,22 +35,10 @@ export default class News extends React.Component {
       this.setState({
           items: this.items
       })
-      console.log(this.state.items)
+      // console.log(this.state.items)
     })
     
   }
-
-  // _articleSort(items){
-  //     console.log('running')
-  //     var _articles = items
-  //     _articles.sort(function(a,b){
-  //       return b.published - a.published;
-  //       }.bind(this));
-  //     this.setState(() => ({
-  //       items: _articles
-  //     }));
-  //   }
-
 
 
 
@@ -87,14 +75,19 @@ export default class News extends React.Component {
     return (
       <div>
         {this.state.items.reverse().map(article => (
-                  <div class="newsItem">
-                    <p style={{paddingLeft: 10}}>
-                      <a target="_blank" class="article" href={article.link} >{article.title}</a> &nbsp; 
-                      <span class="source">{article.source}</span> 
-                      &nbsp;&nbsp;&nbsp;
-                      <span class="time">
-                        <TimeAgo date={article.published} />
-                      </span></p>
+                  <div key={article.title} class="newsItem">
+                    <div>
+                      <p>
+                        <a target="_blank" class="article" href={article.link}>
+                          {article.title}&nbsp;<span class="source"><i>{article.source}</i></span>
+                        </a>
+                      </p> 
+                    </div>
+                    <div class="newsItemRight">
+                      <p>
+                        <TimeAgo class="time" date={article.published} />
+                      </p>
+                    </div>
                   </div>
                 ))}
       </div>

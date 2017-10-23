@@ -36,10 +36,12 @@ export default class App extends React.Component{
             <div class="container">
               <div class="left">
                 <b>stocks</b>
+                <br /><br />
                 <Stocks />
               </div>
               <div class="news">
                 <b>newest updates</b>
+                <br /><br />
                 <News />
               </div>
               <div class="right">

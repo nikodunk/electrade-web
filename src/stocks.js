@@ -8,7 +8,7 @@ export default class Stocks extends React.Component {
     super(props);
     this.state = {
       username: 'articles',
-      items: [{symbol: 'TSLA', price: '355.28', change: -2.4}]
+      items: [{}]
     };
   }
 
@@ -18,10 +18,12 @@ export default class Stocks extends React.Component {
         symbol: 'TSLA',
         modules: [ 'price', 'summaryDetail' ] // see the docs for the full list
       }, function (err, quotes) {
+        // console.log(quotes.price)
         var _items = this.state.items.slice(0)
-        _items[0].change = quotes.price.regularMarketChangePercent
+        _items[0].symbol = quotes.price.symbol
+        _items[0].price = quotes.price.regularMarketPrice
+        _items[0].change = quotes.price.regularMarketChangePercent.toFixed(3) * 100;
         this.setState({items: _items})
-        
       }.bind(this));
         
       
@@ -54,8 +56,10 @@ export default class Stocks extends React.Component {
     return (
       <div>
         {this.state.items.map(stock => (
-                  <div key={stock.symbol}>
-                      {stock.symbol}  {stock.price} {stock.change}
+                  <div class="" key={stock.symbol}>
+                      <div>
+                      {stock.symbol}  ${stock.price}</div>
+                      <div class="newsItemRight"> {stock.change}%</div>
                   </div>
                 ))}
       </div>

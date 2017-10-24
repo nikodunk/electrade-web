@@ -78,7 +78,9 @@ export default class News extends React.Component {
                   <div key={article.title} class="newsItem">
                     <div>
                       <p>
-                        <a target="_blank" class="article" href={article.link}>
+                        <a onclick="ga('send', 'event', 'NewsItem', 'clicked', 'textlinks');" 
+                           target="_blank" class="article"
+                           href={article.link}>
                           {article.title}&nbsp;<span class="source"><i>{article.source}</i></span>
                         </a>
                       </p> 

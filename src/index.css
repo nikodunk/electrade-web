@@ -58,6 +58,7 @@ a {
 	
 	padding: 10px;
 	flex: 2;
+	overflow-y: scroll;
 	border-left: solid 1px lightgrey;	
 }
 

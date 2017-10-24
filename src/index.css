@@ -45,7 +45,7 @@ li a {
 
 .container{
 	display: flex;
-	height: 95vh;
+	height: 92vh;
 	border-top: solid 1px #444;
 
 }
@@ -129,4 +129,9 @@ button {
 	margin-bottom: 10px;
 	border-radius: 3px;
 
+}
+
+
+.stock{
+	display: flex;
 }

@@ -50,11 +50,7 @@ export default class Crumbs extends React.Component {
 
   };
 
-  _getRandomColor () {
-    var hex = Math.floor(Math.random() * 0xFFFFFF);
-    return "#" + ("000000" + hex.toString(16)).substr(-6);
-  }
-
+ 
 
   render() {
     return (

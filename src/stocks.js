@@ -6,38 +6,31 @@ import yahooFinance from 'yahoo-finance'
 export default class Stocks extends React.Component {
   constructor(props) {
     super(props);
+    this._getRandomColor = this._getRandomColor.bind(this);
     this.state = {
       username: 'articles',
-      items: [{}]
+      items: [
+        {name: 'General Motors', cap: 67.730},
+        {name: 'Tesla Inc.', cap: 56.300},
+        {name: 'Vestas Wind', cap: 18.830},
+        {name: 'First Solar', cap: 4.820},
+        {name: 'Nest (exit)', cap: 3.200},
+        {name: 'Bloom Energy', cap: 2.870},
+        {name: 'Gogoro', cap: 0.820},
+        {name: 'Vivint Solar', cap: 0.439},
+        {name: 'Avantium', cap: 0.570},
+        {name: 'Sonnen', cap: 0.180},
+        {name: 'Brammo', cap: 0.150},
+        {name: 'Electron', cap: 0.120},
+        {name: 'Aurora Flight Sciences', cap: 0.030},
+        {name: 'Wunder Capital', cap: 0.020},
+      ]
     };
   }
 
   componentWillMount() {
 
-      yahooFinance.quote({
-        symbol: 'TSLA',
-        modules: [ 'price', 'summaryDetail' ] // see the docs for the full list
-      }, function (err, quotes) {
-        // console.log(quotes.price)
-        var _items = this.state.items.slice(0)
-        _items[0].symbol = quotes.price.symbol
-        _items[0].price = quotes.price.regularMarketPrice
-        _items[0].change = quotes.price.regularMarketChangePercent.toFixed(3) * 100;
-        this.setState({items: _items})
-      }.bind(this));
-        
-      
-      // $.getJSON("http://finance.yahoo.com/webservice/v1/symbols/YHOO,AAPL/quote?format=json&view=detail", function(data){console.log(data)
-      // })
-
-      // $.ajax({
-      //   method: "GET",
-      //   url: "http://finance.yahoo.com/webservice/v1/symbols/TSLA?format=json",
-      //   dataType: "application/json",
-      //   success: function(data){
-      //       console.log('worked with this:' + data)
-      //     }
-      // })
+     
   }
 
 
@@ -54,15 +47,20 @@ export default class Stocks extends React.Component {
 
   render() {
     return (
-      <div>
-        {this.state.items.map(stock => (
-                  <div class="" key={stock.symbol}>
-                      <div>
-                      {stock.symbol}  ${stock.price}</div>
-                      <div class="newsItemRight"> {stock.change}%</div>
-                  </div>
+      <ol>
+        {this.state.items.map(unicorn => (
+                  <li>
+                    <div class="stock" key={unicorn.name}>
+                        <div>
+                          {unicorn.name}
+                        </div>
+                        <div class="newsItemRight">
+                          <span style={{color: '#ffa07a', opacity: .7}}>${unicorn.cap.toFixed(2)}B</span>
+                        </div>
+                    </div>
+                  </li>
                 ))}
-      </div>
+      </ol>
     )
   }
 }

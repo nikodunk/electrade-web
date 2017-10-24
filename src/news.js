@@ -20,10 +20,9 @@ export default class News extends React.Component {
     this._fbUpdate = this._fbUpdate.bind(this);
 
     this.state = {
-      username: 'articles',
       items: []
     };
-    this.ref = firebase.database().ref(this.state.username);
+    this.ref = firebase.database().ref('articles');
   }
 
   componentWillMount() {

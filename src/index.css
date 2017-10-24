@@ -1,19 +1,28 @@
-/*background-color: #333;
-border: 1px solid #666;*/
-
 
 body {
   
   margin: 0;
   padding: 0;
   font-family: verdana, sans-serif;
-  color: grey;
+  color: #888;
+  background-color: #333;
   
 }
 
 a {
 	text-decoration: none;
-	color: #222;
+	color: lightgrey;
+}
+
+input {
+	background: #444;
+	border: none;
+	
+}
+
+li a {
+	text-decoration: none;
+	color: #999;
 }
 
 .source {
@@ -23,9 +32,9 @@ a {
 }
 
 .time {
-	border: 1px solid lightgrey;
+	border: 1px solid #444;
 	padding: 3px;
-	color: #222;
+	color: lightgrey;
 	border-radius: 3px;
 	font-size: .8rem;
 }
@@ -34,7 +43,7 @@ a {
 .container{
 	display: flex;
 	height: 95vh;
-	border-top: solid 1px lightgrey;
+	border-top: solid 1px #444;
 
 }
 
@@ -42,7 +51,7 @@ a {
 .left{
 	padding: 10px;
 	flex: 1;
-	border-right: solid 1px lightgrey;
+	border-right: solid 1px #444;
 }
 
 .news{
@@ -59,7 +68,7 @@ a {
 	padding: 10px;
 	flex: 2;
 	overflow-y: scroll;
-	border-left: solid 1px lightgrey;	
+	border-left: solid 1px #444;	
 }
 
 .title {
@@ -68,7 +77,7 @@ a {
 }
 
 .newsItem{
-	border-bottom: solid 1px lightgrey;
+	border-bottom: solid 1px #444;
 	padding-left: 10px;
 	display: flex;
 }
@@ -93,6 +102,17 @@ a {
 .hr {
 	margin-top: 20px;
 	margin-bottom: 20px;
-	border-bottom: solid 1px lightgrey;
+	border-bottom: solid 1px #444;
 
+}
+
+
+button {
+	padding: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	background-color: lightgreen;
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
 }

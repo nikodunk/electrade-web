@@ -1,5 +1,7 @@
 import React from 'react';
 import Iframe from 'react-iframe'
+import $ from 'jquery'
+import firebase from 'firebase';
 
 
 export default class Crumbs extends React.Component {
@@ -8,6 +10,7 @@ export default class Crumbs extends React.Component {
     this.state = {
       
     };
+    this.handleSubmit = this.handleSubmit.bind(this);
   }
 
   componentWillMount() {
@@ -23,9 +26,25 @@ export default class Crumbs extends React.Component {
       //       console.log('worked with this:' + data)
       //     }
       // })
+
+      this.ref = firebase.database().ref('users');
   }
 
+  
 
+
+
+  handleSubmit(e) {
+      e.preventDefault();
+      console.log('uas')
+      var _input = document.getElementById("myInput").value
+      console.log(_input)
+      this.ref.push({
+        email: _input
+      });
+      document.getElementById('theForm').style.display = 'none';
+  }
+  
 
   componentWillUnmount() {
 
@@ -40,16 +59,20 @@ export default class Crumbs extends React.Component {
   render() {
     return (
       <div >
-        <div class="iframe">
-          <Iframe url="https://upscri.be/a543df/"
-            display="initial"
-            position="relative" />
+        <div id="theForm">
+          <p><b>Ping me when new features are added!</b></p>
+          <form>
+                <input
+                  id="myInput"
+                  type="text"
+                  name="email"
+                  placeholder="youremail@example.com"
+                />&nbsp;
+                <button onClick={this.handleSubmit}>submit</button>
+          </form>
+          <div class="hr"> </div>
         </div>
         
-        <div class="hr"> </div>
-        
-
-
           <b>guides</b>
           <ol>
 
@@ -155,15 +178,15 @@ export default class Crumbs extends React.Component {
 
 
 
-        <form action="https://formspree.io/n.dunkel@gmail.com"
-            method="POST">
+      <form action="https://formspree.io/n.dunkel@gmail.com"
+            method="POST"
+            id="formspree">
             Submit new:
-          <input type="text" placeholder="link or story" name="name" />
-          <input type="email" placeholder="your email" name="_replyto" />
-          <input type="submit" value="Submit" />
+          <input type="text" placeholder="link or story" name="name" />&nbsp;
+          <input type="email" placeholder="your email" name="_replyto" />&nbsp;
+          <button type="submit" value="Submit" >Submit</button>
       </form>
       </div>
     )
   }
 }
-// <input type="text" placeholder="link or story" name="name" />

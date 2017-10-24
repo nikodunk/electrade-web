@@ -175,7 +175,7 @@ export default class Crumbs extends React.Component {
             </li>
             
           </ol>
-        <p>Submit new:</p>
+        <p>Submit new:</p><br />
         <form action="https://formspree.io/n.dunkel@gmail.com"
               method="POST"
               id="formspree">

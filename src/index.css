@@ -18,6 +18,7 @@ input {
 	background: #444;
 	border: none;
 	padding: 10px;
+	border-bottom: 1px solid #666;
 	
 }
 
@@ -101,10 +102,9 @@ li a {
 
 
 .hr {
-	margin-top: 20px;
-	margin-bottom: 20px;
+	margin-top: 10px;
+	margin-bottom: 10px;
 	border-bottom: solid 1px #444;
-
 }
 
 
@@ -117,4 +117,15 @@ button {
 	border: none;
 	border-radius: 3px;
 	cursor: pointer;
+}
+
+
+.box {
+	background-color: #333;
+	padding: 10px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin-bottom: 10px;
+	border-radius: 3px;
+
 }

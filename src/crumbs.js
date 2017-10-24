@@ -58,8 +58,8 @@ export default class Crumbs extends React.Component {
 
   render() {
     return (
-      <div >
-        <div id="theForm">
+      <div>
+        <div class="box" id="theForm">
           <p><b>Ping me when new features are added!</b></p>
           <form>
                 <input
@@ -70,10 +70,10 @@ export default class Crumbs extends React.Component {
                 />&nbsp;
                 <button onClick={this.handleSubmit}>submit</button>
           </form>
-          <div class="hr"> </div>
         </div>
-        
-          <b>guides</b>
+      
+        <div class="box">  
+          <p><b>Guides</b></p>
           <ol>
 
             <li>
@@ -175,18 +175,16 @@ export default class Crumbs extends React.Component {
             </li>
             
           </ol>
-
-
-
-      <form action="https://formspree.io/n.dunkel@gmail.com"
-            method="POST"
-            id="formspree">
-            Submit new:
-          <input type="text" placeholder="link or story" name="name" />&nbsp;
-          <input type="email" placeholder="your email" name="_replyto" />&nbsp;
-          <button type="submit" value="Submit" >Submit</button>
-      </form>
+        <p>Submit new:</p>
+        <form action="https://formspree.io/n.dunkel@gmail.com"
+              method="POST"
+              id="formspree">
+            <input type="text" placeholder="link or story" name="name" />&nbsp;
+            <input type="email" placeholder="your email" name="_replyto" />&nbsp;
+            <button type="submit" value="Submit" >Submit</button>
+        </form>
       </div>
+    </div>
     )
   }
 }

@@ -31,20 +31,22 @@ export default class App extends React.Component{
     return (
           <div >
             <div class="title">
-              <img src="/sun.png" style={{maxHeight: 20}} /> <b>electricfeed</b> is a real-time mobility news & energy aggregator
+              <img src="/sun.png" style={{maxHeight: 20}} /> <b>electricfeed</b> is a real-time <b>mobility & energy</b> news aggregator
             </div>
             <div class="container">
               <div class="left">
-                <b>stocks</b>
-                <br /><br />
+                <b>Mobility & Energy Leaderboard</b>
+                <div class="hr"></div>
+                
                 <Stocks />
               </div>
               <div class="news">
-                <b>newest updates</b>
-                <br /><br />
+                <b>News, Projects</b>
+                <div class="hr"></div>
+                
                 <News />
               </div>
-              <div class="right">
+              <div style={{backgroundColor: '#444'}} class="right">
                   <Crumbs />
               </div>
             </div>

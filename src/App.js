@@ -31,7 +31,7 @@ export default class App extends React.Component{
     return (
           <div >
             <div class="title">
-              <b>sunboxlabs</b> is a real-time mobility & energy news aggregator
+              <img src="/sun.png" style={{maxHeight: 20}} /> <b>sunboxlabs</b> is a real-time mobility & energy news aggregator
             </div>
             <div class="container">
               <div class="left">

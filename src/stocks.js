@@ -49,7 +49,7 @@ export default class Stocks extends React.Component {
 
   render() {
     return (
-      <ol>
+      <ol style={{margin: 5, paddingLeft: 15}}>
         {this.state.items.map(unicorn => (
                   <li>
                     <div class="stock" key={unicorn.name}>
@@ -57,7 +57,7 @@ export default class Stocks extends React.Component {
                           {unicorn.name}
                         </div>
                         <div class="newsItemRight">
-                          <span style={{color: '#ffa07a', opacity: .7}}>${unicorn.cap.toFixed(2)}B</span>
+                          <span style={{color: '#ffa07a', opacity: .4}}>${unicorn.cap.toFixed(2)}B</span>
                         </div>
                     </div>
                   </li>

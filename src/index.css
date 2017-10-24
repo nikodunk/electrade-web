@@ -79,6 +79,21 @@ li a {
 	color: gold;
 }
 
+.title img {
+
+  animation: App-logo-spin infinite 20s linear;
+  height: 20px;
+
+}
+
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+
+
 .newsItem{
 	border-bottom: solid 1px #444;
 	padding-left: 10px;

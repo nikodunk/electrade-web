@@ -31,11 +31,11 @@ export default class App extends React.Component{
     return (
           <div >
             <div class="title">
-              <img src="/sun.png" style={{maxHeight: 20}} /> <b>electricfeed</b> | a real-time aggregator for <b>mobility</b> & <b>energy</b> news
+              <img src="/sun.png" /> <b>electricfeed</b> | real-time news aggregator for <b>mobility</b> & <b>energy</b>
             </div>
             <div class="container">
               <div class="left">
-                <b>Mobility & Energy Leaderboard</b>
+                <b>Leaderboard</b>
                 <div class="hr"></div>
                 
                 <Stocks />

@@ -40,7 +40,6 @@ a {
 
 
 .left{
-	min-width: 200px;
 	padding: 10px;
 	flex: 1;
 	border-right: solid 1px lightgrey;
@@ -51,12 +50,14 @@ a {
 	padding: 10px;
 	flex: 3;
 	overflow-y: scroll;
+	min-width: 400px;
+	
 }
 
 .right{
 	
 	padding: 10px;
-	flex: 3;
+	flex: 2;
 	border-left: solid 1px lightgrey;	
 }
 
@@ -82,8 +83,8 @@ a {
 
 .iframe{
 	display: flex;
-	padding-left: 15%;
-	padding-right: 15%;
+	margin-left: 0 auto;
+	margin-right: 0 auto;
 	margin: 0 auto;
 }
 

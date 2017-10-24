@@ -42,8 +42,6 @@ export default class Crumbs extends React.Component {
       <div >
         <div class="iframe">
           <Iframe url="https://upscri.be/a543df/"
-            width="450px"
-            height="150px"
             display="initial"
             position="relative" />
         </div>

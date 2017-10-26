@@ -1,7 +1,7 @@
 {
   "name": "electricfeed",
   "version": "0.1.0",
-  "homepage": "http://sunboxlabs.com",
+  "homepage": "http://nikodunk.github.io/electricfeed",
   "private": true,
   "dependencies": {
     "firebase": "^4.6.0",

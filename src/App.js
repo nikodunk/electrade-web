@@ -35,7 +35,7 @@ export default class App extends React.Component{
             </div>
             <div class="container">
               <div class="left">
-                <b>Leaderboard</b>
+                <b>Valuation Leaderboard</b>
                 <div class="hr"></div>
                 
                 <Stocks />

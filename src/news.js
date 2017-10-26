@@ -80,7 +80,7 @@ export default class News extends React.Component {
                         <a onclick="ga('send', 'event', 'NewsItem', 'clicked', 'textlinks');" 
                            target="_blank" class="article"
                            href={article.link}>
-                          <img src="/sun.png" style={{maxHeight: 15, opacity: '.9'}} /> {article.title}&nbsp;<span class="source"><i>{article.source}</i></span>
+                          <img src="/electricfeed/sun.png" style={{maxHeight: 15, opacity: '.9'}} /> {article.title}&nbsp;<span class="source"><i>{article.source}</i></span>
                         </a>
                       </p> 
                     </div>

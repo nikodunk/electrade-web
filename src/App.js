@@ -31,7 +31,7 @@ export default class App extends React.Component{
     return (
           <div >
             <div class="title">
-              <img src="/electricfeed/sun.png" /> <b>electricfeed</b> | a solar & EV news aggregator
+              <img src="/electricfeed/sun.png" /> <b>electricfeed</b> | a platform for learning about EVs & solar
             </div>
             <div class="container">
               <div class="left">

@@ -1,6 +1,5 @@
 import React from 'react';
 import $ from 'jquery'
-import yahooFinance from 'yahoo-finance'
 
 
 export default class Stocks extends React.Component {

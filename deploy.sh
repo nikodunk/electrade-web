@@ -2,10 +2,11 @@
 
 # Build the project.
 
+echo -e "\033[0;32mBuilding React Project and deploying to GH-Pages...\033[0m"
 npm run deploy
 
 
-echo -e "\033[0;32mDeploying updates to GitHub...\033[0m"
+echo -e "\033[0;32mDeploying Source to GitHub...\033[0m"
 
 git add .
 

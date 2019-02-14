@@ -1,7 +1,7 @@
 {
   "name": "electrification",
   "version": "0.1.0",
-  "homepage": "http://www.electrification.cc",
+  "homepage": "http://electrification.cc",
   "private": true,
   "dependencies": {
     "react": "^16.8.2",
@@ -10,8 +10,7 @@
     "react-timeago": "^3.4.3"
   },
   "devDependencies": {
-    "gh-pages": "^0.12.0",
-    "react-scripts": "0.9.5"
+    "gh-pages": "^0.12.0"
   },
   "scripts": {
     "start": "react-scripts start",

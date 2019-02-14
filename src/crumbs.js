@@ -41,8 +41,17 @@ export default class Crumbs extends React.Component {
     return (
       <div>
         <div class="box" id="theForm">
-          <p><b>Get Daily Price Updates!</b></p>
-          <form>
+          
+          <p><b>Add Your Car:</b></p>
+          <form action="https://formspree.io/n.dunkel@gmail.com"
+                method="POST"
+                id="formspree">
+              <input type="text" placeholder="Your Car" name="name" />&nbsp;
+              <input type="email" placeholder="your email" name="_replyto" />&nbsp;
+              <button type="submit" value="Submit"><b>+ Submit</b></button>
+          </form>
+
+          {/*<form>
                 <input
                   id="myInput"
                   type="text"
@@ -50,7 +59,7 @@ export default class Crumbs extends React.Component {
                   placeholder="youremail@example.com"
                 />&nbsp;
                 <button onClick={this.handleSubmit}>submit</button>
-          </form>
+          </form>*/}
         </div>
 
         <div>

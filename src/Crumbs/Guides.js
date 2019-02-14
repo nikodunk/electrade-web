@@ -12,7 +12,7 @@ export default class PriceTrackerNew extends React.Component {
   render() {
     return (
       <div class="box">  
-                <p><b>Guides</b></p>
+                <p><b>Other Guides</b></p>
                 <ol>
 
                   <li>
@@ -114,14 +114,6 @@ export default class PriceTrackerNew extends React.Component {
                   </li>
                   
                 </ol>
-              <p>Submit new:</p><br />
-              <form action="https://formspree.io/n.dunkel@gmail.com"
-                    method="POST"
-                    id="formspree">
-                  <input type="text" placeholder="link or story" name="name" />&nbsp;
-                  <input type="email" placeholder="your email" name="_replyto" />&nbsp;
-                  <button type="submit" value="Submit" >Submit</button>
-              </form>
             </div>
     )
   }

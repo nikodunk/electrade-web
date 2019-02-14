@@ -1,7 +1,7 @@
 import React from 'react';
 import Iframe from 'react-iframe'
 import $ from 'jquery'
-import firebase from 'firebase';
+// import firebase from 'firebase';
 
 
 export default class Crumbs extends React.Component {
@@ -27,7 +27,7 @@ export default class Crumbs extends React.Component {
       //     }
       // })
 
-      this.ref = firebase.database().ref('users');
+      // this.ref = firebase.database().ref('users');
   }
 
   

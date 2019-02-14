@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import News from './news'
-import Stocks from './stocks'
+import PriceTrackerNew from './PriceTrackerNew'
 import Crumbs from './crumbs'
 
 
@@ -31,14 +31,13 @@ export default class App extends React.Component{
     return (
           <div >
             <div class="title">
-              <img src="/sun.png" /> <b>electrification</b> | EV Price Tracker & News Aggregator
+              <img src="/sun.png" alt="" /> <b>electrification</b> | EV Price Tracker & News Aggregator
             </div>
             <div class="container">
               <div class="left">
-                <b>Valuation Leaderboard</b>
+                <b>New EV Price Tracker (updated daily)</b>
                 <div class="hr"></div>
-                
-                <Stocks />
+                <PriceTrackerNew />
               </div>
               <div class="news">
                 <b>News, Projects</b>

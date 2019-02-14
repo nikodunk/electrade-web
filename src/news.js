@@ -2,7 +2,6 @@ import React from 'react';
 import TimeAgo from 'react-timeago'
 
 
-
 export default class News extends React.Component {
   constructor(props) {
     super(props);
@@ -55,30 +54,12 @@ export default class News extends React.Component {
     this.ref.off();
   };
 
-  // handleUpdate = (e, key) => {
-  //   //  console.log(key, e)
-  //    var _newData = this.state.items
-  //    var _updated = e.target.value.charAt(0).toUpperCase() + e.target.value.slice(1)
-  //    _newData[key].name = _updated
-  //   //  console.log(_newData)
-  //    this.setState({
-  //      items: _newData
-  //    })
-  //    console.log(this.state)
-  //    this._fbUpdate(this.state.items)
-  // };
-
 
   _getRandomColor () {
     var hex = Math.floor(Math.random() * 0xFFFFFF);
     return "#" + ("000000" + hex.toString(16)).substr(-6);
   }
 
-  // _fbUpdate(_newData){
-  //   console.log('updating server...')
-  //   this.ref.set(_newData)
-  //   // this.componentWillMount()
-  // }
 
   render() {
     return (
@@ -90,7 +71,7 @@ export default class News extends React.Component {
                         <a onclick="ga('send', 'event', 'NewsItem', 'clicked', 'textlinks');" 
                            target="_blank" class="item"
                            href={item.link}>
-                          <img src="/sun.png" style={{maxHeight: 15, opacity: '.9'}} /> {item.text.substring(0, item.text.indexOf('http'))}&nbsp;<span class="source"><i>{item.source}</i></span>
+                          <img src="/sun.png" alt="" style={{maxHeight: 15, opacity: '.9'}} /> {item.text.substring(0, item.text.indexOf('http'))}&nbsp;<span class="source"><i>{item.source}</i></span>
                         </a>
                       </p> 
                     </div>

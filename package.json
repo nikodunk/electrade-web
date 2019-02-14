@@ -1,7 +1,7 @@
 {
-  "name": "electricfeed",
+  "name": "electrification",
   "version": "0.1.0",
-  "homepage": "http://electrafeed.com",
+  "homepage": "http://www.electrification.cc",
   "private": true,
   "dependencies": {
     "firebase": "^4.6.0",

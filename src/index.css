@@ -55,6 +55,7 @@ li a {
 	padding: 10px;
 	flex: 1;
 	border-right: solid 1px #444;
+	overflow-y: scroll;
 }
 
 .news{
@@ -147,6 +148,6 @@ button {
 }
 
 
-.stock{
-	display: flex;
+.carName{
+	padding-left: 5px;
 }

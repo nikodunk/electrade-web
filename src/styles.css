@@ -45,16 +45,18 @@ li a {
 
 .container{
 	display: flex;
-	height: 94vh;
+	height: 93vh;
 	border-top: solid 1px #444;
+	flex-wrap: wrap;
 }
 
 
-.left{
+.prices{
 	padding: 10px;
 	flex: 1;
 	border-right: solid 1px #444;
 	overflow-y: scroll;
+	height: 92vh;
 }
 
 .news{
@@ -63,15 +65,17 @@ li a {
 	flex: 3;
 	overflow-y: scroll;
 	min-width: 400px;
+	height: 92vh;
 	
 }
 
-.right{
+.crumbs{
 	padding: 10px;
 	flex: 2;
 	overflow-y: scroll;
 	border-left: solid 1px #444;	
 	background-color: #444;
+	height: 92vh;
 }
 
 .title {

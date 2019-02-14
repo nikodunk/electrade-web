@@ -36,7 +36,7 @@ export default class App extends React.Component{
             
             <div class="container">
 
-              <div class="left">
+              <div class="prices">
                 <b>New EV Price Tracker (updated daily)</b>
                 <div class="hr"></div>
                 <PriceTrackerNew />
@@ -48,7 +48,7 @@ export default class App extends React.Component{
                 <News />
               </div>
 
-              <div class="right">
+              <div class="crumbs">
                   <Crumbs />
               </div>
 

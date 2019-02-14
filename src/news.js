@@ -65,14 +65,18 @@ export default class News extends React.Component {
     return (
       <div>
         {this.state.data.map(item => (
+          <a onclick="ga('send', 'event', 'NewsItem', 'clicked', 'textlinks');" target="_blank" class="item" href={item.link}>
                   <div key={item.text} class="newsItem">
                     <div>
+                      <img 
+                          src={item.image} 
+                          alt="" 
+                          class="newsImage" />
+                    </div>
+                    <div>
                       <p>
-                        <a onclick="ga('send', 'event', 'NewsItem', 'clicked', 'textlinks');" 
-                           target="_blank" class="item"
-                           href={item.link}>
-                          <img src="/electron.png" alt="" style={{maxHeight: 15, opacity: '.9'}} /> {item.text.substring(0, item.text.indexOf('http'))}&nbsp;<span class="source"><i>{item.source}</i></span>
-                        </a>
+                        {item.text.substring(0, item.text.indexOf('http'))}&nbsp;
+                        <span class="source"><i>{item.source}</i></span>
                       </p> 
                     </div>
                     <div class="newsItemRight">
@@ -81,6 +85,7 @@ export default class News extends React.Component {
                       </p>
                     </div>
                   </div>
+          </a>
                 ))}
       </div>
     )

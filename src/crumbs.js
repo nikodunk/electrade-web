@@ -1,7 +1,7 @@
 import React from 'react';
 
-import PriceTrackerUsed from './PriceTrackerUsed'
-import Guides from './Guides'
+import PriceTrackerUsed from './Crumbs/PriceTrackerUsed'
+import Guides from './Crumbs/Guides'
 
 
 export default class Crumbs extends React.Component {

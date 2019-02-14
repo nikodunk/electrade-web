@@ -45,9 +45,8 @@ li a {
 
 .container{
 	display: flex;
-	height: 92vh;
+	height: 94vh;
 	border-top: solid 1px #444;
-
 }
 
 
@@ -68,11 +67,11 @@ li a {
 }
 
 .right{
-	
 	padding: 10px;
 	flex: 2;
 	overflow-y: scroll;
 	border-left: solid 1px #444;	
+	background-color: #444;
 }
 
 .title {
@@ -80,10 +79,12 @@ li a {
 	color: gold;
 }
 
-.title img {
+img {
 
   animation: App-logo-spin infinite 20s linear;
   height: 20px;
+  vertical-align: middle;
+  margin-bottom: 3px;
 
 }
 

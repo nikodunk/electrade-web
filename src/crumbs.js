@@ -42,7 +42,7 @@ export default class Crumbs extends React.Component {
       <div>
         <div class="box" id="theForm">
           
-          <p><b>Add Your Car:</b></p>
+          <p><b>Sell your Used or New EV:</b></p>
           <form action="https://formspree.io/n.dunkel@gmail.com"
                 method="POST"
                 id="formspree">

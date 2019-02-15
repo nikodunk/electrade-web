@@ -31,19 +31,20 @@ export default class App extends React.Component{
     return (
           <div >
             <div class="title">
-              <img src="/electron.png" alt="" /> <b>electrification</b> | EV Price Tracker & News Aggregator
+              <span><img src="/electron.png" alt="" /> <b>electrification</b> | EV Price Tracker & News Aggregator</span>
+              <span style={{paddingLeft: 'auto'}}><a href="https://itunes.apple.com/us/app/id1445602414" target="blank">Get the App</a></span>
             </div>
             
             <div class="container">
 
               <div class="prices">
-                <b>New EV Price Tracker (updated daily)</b>
+                <b>New Electric Vehicle Prices (updated daily)</b>
                 <div class="hr"></div>
                 <PriceTrackerNew />
               </div>
 
               <div class="news">
-                <b>Latest Electric Vehicle News</b>
+                <b>Latest EV News</b>
                 <div class="hr"></div>
                 <News />
               </div>

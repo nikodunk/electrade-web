@@ -17,101 +17,32 @@ export default class PriceTrackerNew extends React.Component {
 
                   <li>
                     <a onclick="ga('send', 'event', 'Article', 'clicked', 'textlinks');"
-                       target="_blank" href="/2017/06/20/200-apartment-solar-system.html">
+                       target="_blank" href="https://sunboxlabs.com/200-apartment-solar-system/">
                     Project: $200 Off-Grid Solar For Apartments 
                     </a>&nbsp;
                   </li>
                   
                   <li>
                     <a onclick="ga('send', 'event', 'Article', 'clicked', 'textlinks');"
-                    target="_blank" href="/2017/09/06/burning-man-update.html">
+                    target="_blank" href="https://sunboxlabs.com/burning-man-solar/">
                     Project: Burning Man System 
                     </a>&nbsp;
                   </li>
                   
                   <li>
                     <a onclick="ga('send', 'event', 'Article', 'clicked', 'textlinks');"
-                    target="_blank" href="/2017/09/17/what-will-it-run.html">
+                    target="_blank" href="https://sunboxlabs.com/what-will-solar-run/">
                     Project: Low-energy devices for an off-grid home 
                     </a>&nbsp;
                   </li>
                   
                   <li>
                     <a onclick="ga('send', 'event', 'Article', 'clicked', 'textlinks');"
-                    target="_blank" href="/2017/09/30/box-update.html">
-                    Project: Box Update 
+                    target="_blank" href="https://sunboxlabs.com/200-solar-lithium-update/">
+                    Simplified 100W Lithium System 
                     </a>&nbsp;
                   </li>
                   
-                  <li>
-                    <a onclick="ga('send', 'event', 'Article', 'clicked', 'textlinks');"
-                    target="_blank" href="/2017/10/01/burning-man-solar-2.html">
-                    Project: For Burning Man / Camping (Lithium battery) 
-                    </a>&nbsp;
-                  </li>
-                  
-                  <li>
-                    <a onclick="ga('send', 'event', 'Article', 'clicked', 'textlinks');"
-                    target="_blank" href="/2017/10/07/solarpi.html">
-                    Project: SolarPi 
-                    </a>&nbsp;
-                  </li>
-                  
-                  <li>
-                    <a onclick="ga('send', 'event', 'Article', 'clicked', 'textlinks');"
-                    target="_blank" href="/2017/10/07/stock-sunjack-in-window.html">
-                    Project: sunjack stock in window 
-                    </a>&nbsp;
-                  </li>
-                  
-                  <li>
-                    <a onclick="ga('send', 'event', 'Article', 'clicked', 'textlinks');"
-                    target="_blank" href="/2017/10/09/hurricane.html">
-                    Project: Hurricane Solar Lighting 
-                    </a>&nbsp;
-                  </li>
-                  
-                  <li>
-                    <a onclick="ga('send', 'event', 'Article', 'clicked', 'textlinks');"
-                    target="_blank" href="/2017/10/10/build-it.html">
-                    Link: More than 500 renewable energy and conservation projects you can build 
-                    </a>&nbsp;
-                  </li>
-                  
-                  <li>
-                    <a onclick="ga('send', 'event', 'Article', 'clicked', 'textlinks');"
-                    target="_blank" href="/2017/10/10/check-reddit.html">
-                    Link: The Reddit DIY Community 
-                    </a>&nbsp;
-                  </li>
-                  
-                  <li>
-                    <a onclick="ga('send', 'event', 'Article', 'clicked', 'textlinks');"
-                    target="_blank" href="/2017/10/10/desert-power.html">
-                    Link: Desert power (without lots of generators) 
-                    </a>&nbsp;
-                  </li>
-                  
-                  <li> 
-                    <a onclick="ga('send', 'event', 'Article', 'clicked', 'textlinks');"
-                    target="_blank" href="/2017/10/10/full-rv.html">
-                    Link: Full RV Solar &amp; Inverter Install ~ From Start To Finish (Video) 
-                    </a>&nbsp;
-                  </li>
-                  
-                  <li>
-                    <a onclick="ga('send', 'event', 'Article', 'clicked', 'textlinks');"
-                    target="_blank" href="/2017/10/10/hackaday-solar.html">
-                    Link: Hackaday Solar Projects 
-                    </a>&nbsp;
-                  </li>
-                  
-                  <li> 
-                    <a onclick="ga('send', 'event', 'Article', 'clicked', 'textlinks');"
-                    target="_blank" href="/2017/10/16/solar-smartwatch.html">
-                    Link: LunaR, the world’s first solar powered smartwatch.  
-                    </a>&nbsp;
-                  </li>
                   
                 </ol>
             </div>

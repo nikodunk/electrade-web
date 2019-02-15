@@ -12,4 +12,4 @@ To deploy to Gh-Pages:
 
 	./deploy.sh
 
-![](./preview.png)
+![](./demo.png)

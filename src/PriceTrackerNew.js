@@ -83,10 +83,10 @@ export default class PriceTrackerNew extends React.Component {
                   <a href={item.link} target="_blank" >
                     <div style={{display: 'flex', flexDirection: 'row'}}>
                       
-                      <div>
+                      <div style={{flex: 1}}>
                         <span style={{color: 'gold', opacity: .7}}>${item.price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</span>
                       </div>
-                      <div class="carName" key={item.name}>
+                      <div class="carName" key={item.name} style={{flex: 2}}>
                           <div>
                             {item.name.replace('NEW', '')}
                           </div>

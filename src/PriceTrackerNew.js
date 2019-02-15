@@ -84,7 +84,7 @@ export default class PriceTrackerNew extends React.Component {
                     <div style={{display: 'flex', flexDirection: 'row'}}>
                       
                       <div>
-                        <span style={{color: 'orange', opacity: .4}}>${item.price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</span>
+                        <span style={{color: 'gold', opacity: .7}}>${item.price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</span>
                       </div>
                       <div class="carName" key={item.name}>
                           <div>

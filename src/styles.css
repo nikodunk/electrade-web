@@ -12,6 +12,7 @@ body {
 a {
 	text-decoration: none;
 	color: lightgrey;
+	cursor: pointer;
 }
 
 input {
@@ -31,7 +32,6 @@ li a {
 .source {
 	color: grey;
 	font-size: .8rem;
-	
 }
 
 .time {
@@ -129,10 +129,10 @@ button {
 	padding-left: 15px;
 	padding-right: 15px;
 	background-color: gold;
-	opacity: .9;
 	border: none;
 	border-radius: 3px;
 	cursor: pointer;
+	font-size: .8rem;
 }
 
 .box {
@@ -147,4 +147,11 @@ button {
 
 .carName{
 	padding-left: 5px;
+}
+
+.AppButton{
+	position: absolute;
+	right: 10px;
+	cursor: pointer;
+	color: gold;
 }

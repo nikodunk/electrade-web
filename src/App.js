@@ -31,10 +31,16 @@ export default class App extends React.Component{
     return (
           <div >
             <div class="title">
-              <span><img src="/electron.png" alt="" /> <b>electrification</b> | EV Price Tracker & News Aggregator</span>
-              <span style={{paddingLeft: 'auto'}}><a href="https://itunes.apple.com/us/app/id1445602414" target="blank">Get the App</a></span>
+              <span>
+
+                <img src="/electron.png" alt="" />&nbsp;
+                <b>electrification</b> | EV Price Tracker & News Aggregator
+                <a class="AppButton" href="https://itunes.apple.com/us/app/id1445602414" target="blank">Get the App</a>
+              </span>
             </div>
             
+
+
             <div class="container">
 
               <div class="prices">
@@ -54,6 +60,9 @@ export default class App extends React.Component{
               </div>
 
             </div>
+
+
+
 
           </div>
     )

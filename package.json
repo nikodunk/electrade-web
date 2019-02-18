@@ -1,7 +1,7 @@
 {
   "name": "electrification",
   "version": "0.1.0",
-  "homepage": "http://electrification.cc",
+  "homepage": "https://electrification.cc",
   "private": true,
   "dependencies": {
     "react": "^16.8.2",

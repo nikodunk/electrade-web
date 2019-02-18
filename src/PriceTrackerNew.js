@@ -80,7 +80,7 @@ export default class PriceTrackerNew extends React.Component {
     return (
       <div style={{margin: 5, height: '100%'}}>
         {this.state.data.map(item => (
-                  <a href={item.link} target="_blank" >
+                  <a href={item.link} target="_blank" rel="noopener noreferrer">
                     <div style={{display: 'flex', flexDirection: 'row'}}>
                       
                       <div style={{flex: 1}}>

@@ -89,7 +89,7 @@ export default class PriceTrackerNew extends React.Component {
 
                       <div key={item.name} style={{flex: 2}}>
                           <div class="carName">
-                            <img src={item.image} class="carImage" alt="New Car Image" />
+                            {/*<img src={item.image} class="carImage" alt="New Car Image" />*/}
                             {item.name.replace('NEW', '')}
                           </div>
                       </div>

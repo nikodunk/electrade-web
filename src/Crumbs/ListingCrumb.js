@@ -8,7 +8,7 @@ export default class ListingCrumb extends React.Component {
     return (
       <div class="box" id="theForm">
         
-        <p><b>List your Used or New EV here too:</b></p>
+        <p class="title"><b>Add your EV Listing:</b></p>
         <form action="https://formspree.io/hello@sunboxlabs.com"
               method="POST"
               id="formspree">

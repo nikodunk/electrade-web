@@ -64,6 +64,9 @@ export default class News extends React.Component {
   render() {
     return (
       <div>
+        <span class="title"><b>Latest EV News</b></span>
+        <hr />
+
         {this.state.data.map(item => (
           <a onclick="ga('send', 'event', 'NewsItem', 'clicked', 'textlinks');" target="_blank" class="item" href={item.link} rel="noopener noreferrer">
                   <div key={item.text} class="newsItem">

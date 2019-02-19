@@ -1,63 +1,49 @@
 
 body {
-  
   margin: 0;
   padding: 0;
   font-family: verdana, sans-serif;
-  color: #888;
-  background-color: #333;
   
 }
 
 a {
 	text-decoration: none;
-	color: lightgrey;
 	cursor: pointer;
+	color: black;
 }
 
 input {
-	background: #444;
 	border: none;
 	padding: 10px;
-	border-radius: 5px;
-	border-bottom: 1px solid #666;
+	border-bottom: 1px solid lightgrey;
 	
 }
 
 li a {
 	text-decoration: none;
-	color: #999;
 }
 
 .source {
-	color: grey;
 	font-size: .8rem;
+	color: lightgrey;
 }
 
 .time {
-	border: 1px solid #444;
+	border: 1px solid lightgrey;
 	padding: 3px;
-	color: lightgrey;
 	border-radius: 3px;
 	font-size: .8rem;
+	color: grey;
 }
 
 
 .container{
 	display: flex;
 	height: 93vh;
-	border-top: solid 1px #444;
+	border-top: solid 1px lightgrey;
 	flex-wrap: wrap;
 }
 
-
-.prices{
-	padding: 10px;
-	flex: 1;
-	border-right: solid 1px #444;
-	overflow-y: scroll;
-	height: 92vh;
-}
 
 .news{
 	
@@ -69,18 +55,17 @@ li a {
 	
 }
 
-.crumbs{
+.listings{
 	padding: 10px;
 	flex: 2;
 	overflow-y: scroll;
-	border-left: solid 1px #444;	
-	background-color: #444;
+	border-left: solid 1px lightgrey;	
 	height: 92vh;
 }
 
 .title {
 	padding: 10px;
-	color: gold;
+	color: limegreen;
 }
 
 .title img {
@@ -99,7 +84,7 @@ li a {
 }
 
 .newsItem{
-	border-bottom: solid 1px #444;
+	border-bottom: solid 1px lightgrey;
 	padding-left: 10px;
 	display: flex;
 }
@@ -112,9 +97,10 @@ li a {
 
 .newsImage{
 	width: 100px;
-	max-height: 60px;
-	margin: 5px;
+	max-height: 80px;
 	margin-right: 20px;
+	vertical-align: middle;
+	padding: 5px;
 }
 
 .carImage{
@@ -123,10 +109,9 @@ li a {
 	max-width: 60px;
 }
 
-.hr {
-	margin-top: 10px;
-	margin-bottom: 10px;
-	border-bottom: solid 1px #444;
+hr {
+	border: 0;
+	border-bottom: 1px solid lightgrey;
 }
 
 
@@ -134,21 +119,19 @@ button {
 	padding: 10px;
 	padding-left: 15px;
 	padding-right: 15px;
-	background-color: gold;
 	border: none;
 	border-radius: 3px;
 	cursor: pointer;
 	font-size: .8rem;
+	background-color: limegreen;
 }
 
 .box {
-	background-color: #333;
 	padding: 10px;
 	padding-top: 20px;
 	padding-bottom: 20px;
 	margin-bottom: 10px;
 	border-radius: 3px;
-
 }
 
 .carName{
@@ -157,12 +140,10 @@ button {
 
 .carPrice{
 	opacity: .7;
-	color: gold;
 }
 
 .AppButton{
 	position: absolute;
 	right: 10px;
 	cursor: pointer;
-	color: gold;
 }

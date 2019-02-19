@@ -79,23 +79,30 @@ export default class PriceTrackerNew extends React.Component {
   render() {
     return (
       <div style={{margin: 5, height: '100%'}}>
+        <p class="title"><b>Used Electric Vehicle Prices (updated daily)</b></p>
+
         {this.state.data.map(item => (
-                  <a href={item.link} target="_blank" rel="noopener noreferrer">
+                  <a href={"https://www.edmunds.com"+item.link} target="_blank" rel="noopener noreferrer">
                     <div style={{display: 'flex', flexDirection: 'row'}}>
                       
                       <div key={item.name} style={{flex: 1}}>
-                            <span class="carPrice">${item.price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</span>
+                            <img src={item.image} class="carImage" alt="Used Car Image" />
                       </div>
 
-                      <div key={item.name} style={{flex: 2}}>
+
+                      <div style={{flex: 1}}>
+                        <span class="carPrice" >${item.price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</span>
+                      </div>
+
+                      <div key={item.name} style={{flex: 4}}>
                           <div class="carName">
-                            {/*<img src={item.image} class="carImage" alt="New Car Image" />*/}
-                            {item.name.replace('NEW', '')}
+                            {item.name.replace('USED', '')}
                           </div>
                       </div>
 
                     </div>
-                  </a>                  
+                    <hr />
+                  </a>                 
                 ))}
       </div>
     )

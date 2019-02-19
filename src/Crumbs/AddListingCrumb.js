@@ -17,15 +17,6 @@ export default class ListingCrumb extends React.Component {
             <button type="submit" value="Submit"><b>+ Submit</b></button>
         </form>
 
-        {/*<form>
-              <input
-                id="myInput"
-                type="text"
-                name="email"
-                placeholder="youremail@example.com"
-              />&nbsp;
-              <button onClick={this.handleSubmit}>submit</button>
-        </form>*/}
       </div>
     )
   }

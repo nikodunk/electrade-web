@@ -2,8 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom';
 import News from './News'
 import './styles.css';
-import PriceTrackerNew from './PriceTrackerNew'
-import Crumbs from './Crumbs'
+import Listings from './Listings'
 
 
 
@@ -34,7 +33,7 @@ export default class App extends React.Component{
               <span>
 
                 <img src="/electron.png" alt="" />&nbsp;
-                <b>electrification</b> | EV Price Tracker & News Aggregator
+                <b>electrification</b> | The world's first EV Marketplace
                 <a class="AppButton" href="https://itunes.apple.com/us/app/id1445602414" target="blank">Get the App</a>
               </span>
             </div>
@@ -43,20 +42,13 @@ export default class App extends React.Component{
 
             <div class="container">
 
-              <div class="prices">
-                <b>New Electric Vehicle Prices (updated daily)</b>
-                <div class="hr"></div>
-                <PriceTrackerNew />
-              </div>
 
               <div class="news">
-                <b>Latest EV News</b>
-                <div class="hr"></div>
                 <News />
               </div>
 
-              <div class="crumbs">
-                  <Crumbs />
+              <div class="listings">
+                  <Listings />
               </div>
 
             </div>

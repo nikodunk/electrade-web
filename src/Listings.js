@@ -1,8 +1,8 @@
 import React from 'react';
-
-import PriceTrackerUsed from './Crumbs/PriceTrackerUsed'
 import Guides from './Crumbs/Guides'
-import ListingCrumb from './Crumbs/ListingCrumb'
+import AddListingCrumb from './Crumbs/AddListingCrumb'
+import PriceTrackerNew from './Crumbs/PriceTrackerNew'
+import PriceTrackerUsed from './Crumbs/PriceTrackerUsed'
 
 
 export default class Crumbs extends React.Component {
@@ -42,12 +42,22 @@ export default class Crumbs extends React.Component {
     return (
       <div>
         <div>
-          <ListingCrumb />
+          <AddListingCrumb />
         </div>
+
+        <hr />
 
         <div>
           <PriceTrackerUsed />
         </div>
+
+        <hr />
+
+        <div>
+          <PriceTrackerNew />
+        </div>
+
+        <hr />
         
         <div>
           <Guides />

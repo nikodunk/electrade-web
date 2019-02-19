@@ -83,12 +83,9 @@ export default class PriceTrackerNew extends React.Component {
                   <a href={item.link} target="_blank" rel="noopener noreferrer">
                     <div style={{display: 'flex', flexDirection: 'row'}}>
                       
-                      <div style={{flex: 1}}>
-                        <span class="carPrice">${item.price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</span>
-                      </div>
-
                       <div key={item.name} style={{flex: 1}}>
                             <img src={item.image} class="carImage" alt="New Car Image" />
+                            <span class="carPrice">${item.price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</span>
                       </div>
 
                       <div key={item.name} style={{flex: 2}}>

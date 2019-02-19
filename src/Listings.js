@@ -41,27 +41,20 @@ export default class Crumbs extends React.Component {
   render() {
     return (
       <div>
-        <div>
           <AddListingCrumb />
-        </div>
+          
+          <hr />
 
-        <hr />
-
-        <div>
           <PriceTrackerUsed />
-        </div>
 
-        <hr />
+          <hr />
 
-        <div>
           <PriceTrackerNew />
-        </div>
 
-        <hr />
+          <hr />
         
-        <div>
           <Guides />
-        </div>
+
     </div>
     )
   }

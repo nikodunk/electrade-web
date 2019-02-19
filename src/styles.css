@@ -3,7 +3,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: verdana, sans-serif;
-  
+  background-color: #efefef;
 }
 
 a {
@@ -15,8 +15,7 @@ a {
 input {
 	border: none;
 	padding: 10px;
-	border-bottom: 1px solid lightgrey;
-	
+	border-radius: 5px;
 }
 
 li a {
@@ -25,7 +24,7 @@ li a {
 
 .source {
 	font-size: .8rem;
-	color: lightgrey;
+	color: grey;
 }
 
 .time {
@@ -35,7 +34,6 @@ li a {
 	font-size: .8rem;
 	color: grey;
 }
-
 
 .container{
 	display: flex;
@@ -69,19 +67,12 @@ li a {
 }
 
 .title img {
-
-  /*animation: App-logo-spin infinite 20s linear;*/
   height: 20px;
   vertical-align: middle;
   margin-bottom: 3px;
 
 }
 
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
 
 .newsItem{
 	border-bottom: solid 1px lightgrey;
@@ -146,4 +137,13 @@ button {
 	position: absolute;
 	right: 10px;
 	cursor: pointer;
+}
+
+
+.navbar {
+    -webkit-box-shadow: 0 1px 3px -1px lightgrey;
+    -moz-box-shadow: 0 1px 3px -1px lightgrey;
+    box-shadow: 0 1px 3px -1px lightgrey;
+    z-index: 100;
+    background-color: #efefef;
 }

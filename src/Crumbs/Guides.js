@@ -7,7 +7,7 @@ export default class PriceTrackerNew extends React.Component {
   render() {
     return (
       <div class="box">  
-                <p><b>Other Guides</b></p>
+                <p class="title"><b>Other Guides</b></p>
                 <ol>
 
                   <li>

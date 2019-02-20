@@ -14,8 +14,8 @@ a {
 
 input {
 	border: none;
+	border-bottom: 1px solid lightgrey;
 	padding: 10px;
-	border-radius: 5px;
 }
 
 li a {

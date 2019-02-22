@@ -32,7 +32,7 @@ export default class App extends React.Component{
             <div class="title navbar">
               <span>
                 <img src="/electron.png" alt="" />&nbsp;
-                <b>electrification</b> | The world's first electric vehicle marketplace
+                <b>electrification</b> | EV News & The world's first electric vehicle marketplace
                 <a class="AppButton" href="https://itunes.apple.com/us/app/id1445602414" target="blank">Get the App</a>
               </span>
             </div>

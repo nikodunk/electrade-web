@@ -61,7 +61,7 @@ export default class PriceTrackerUsed extends React.Component {
   render() {
     return (
       <div class="box">
-        <p class="title"><b>USED Electric Vehicle Prices (updated daily)</b></p>
+        <p class=""><b>USED Electric Vehicle Prices (updated daily)</b></p>
         {this.state.data.map(item => (
                   <a href={"https://www.edmunds.com"+item.link} target="_blank" rel="noopener noreferrer">
                     <div style={{display: 'flex', flexDirection: 'row'}}>

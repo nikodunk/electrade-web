@@ -29,11 +29,11 @@ export default class App extends React.Component{
   render(){
     return (
           <div>
-            <div class="title navbar">
+            <div class="navbar">
               <span>
                 <img src="/electron.png" alt="" />&nbsp;
-                <b>electrification</b> | EV News & The world's first electric vehicle marketplace
-                <a class="AppButton" href="https://itunes.apple.com/us/app/id1445602414" target="blank">Get the App</a>
+                <span class="title"><b>electrification</b></span> <span class="subtitle">EV News & The world's first electric vehicle marketplace</span>
+                <a class="AppButton title time" href="https://itunes.apple.com/us/app/id1445602414" target="blank">Get the App</a>
               </span>
             </div>
             

@@ -63,8 +63,8 @@ export default class News extends React.Component {
 
   render() {
     return (
-      <div>
-        <span class="title"><b>Latest EV News</b></span>
+      <div class="box">
+        <span class=""><b>Latest EV News</b></span>
         <hr />
 
         {this.state.data.map(item => (

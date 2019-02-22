@@ -43,15 +43,15 @@ export default class Crumbs extends React.Component {
       <div>
           <AddListingCrumb />
           
-          <hr />
+
 
           <PriceTrackerUsed />
 
-          <hr />
+
 
           <PriceTrackerNew />
 
-          <hr />
+
         
           <Guides />
 

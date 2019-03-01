@@ -1,7 +1,7 @@
 {
   "name": "electrification",
   "version": "0.1.0",
-  "homepage": "https://electrade.github.io",
+  "homepage": "https://electrification.cc",
   "private": true,
   "dependencies": {
     "react": "^16.8.2",

@@ -43,7 +43,7 @@ export default class News extends React.Component {
           // set results as state
           .then((sorted) => { 
                           this.setState({data: sorted}); 
-                          console.log(sorted)
+                          // console.log(sorted)
 
                           })
     

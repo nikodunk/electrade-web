@@ -46,7 +46,7 @@ li a {
 .news{
 	
 	padding: 10px;
-	flex: 3;
+	flex: 1;
 	overflow-y: scroll;
 	min-width: 400px;
 	height: 92vh;
@@ -55,7 +55,7 @@ li a {
 
 .listings{
 	padding: 10px;
-	flex: 2;
+	flex: 1;
 	overflow-y: scroll;
 	/*border-left: solid 1px lightgrey;	*/
 	height: 92vh;
@@ -97,8 +97,7 @@ li a {
 }
 
 .carImage{
-	max-height: 30px;
-	max-width: 60px;
+	
 }
 
 hr {

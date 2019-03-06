@@ -4,45 +4,14 @@ import React from 'react';
 export default class PriceTrackerUsed extends React.Component {
   constructor(props) {
     super(props);
-    this._getRandomColor = this._getRandomColor.bind(this);
     this.state = {
-      data: []
+      data: [],
+      loading: false
     };
   }
 
   componentWillMount() {
-      fetch('https://api.apify.com/v1/rG44NsjnfukCkKecE/crawlers/ssxDRduoSE3XdkzLv/lastExec/results?token=vDBYC8EeGdBZpYPrrrXLEjmwF')
-        .then((res) => { return res.json()})
-        
-        // merge arrays from different sites
-        .then(res =>  {   let finalArray = []
-                           for (var i = 0; i < res.length; i++){
-                                  if (i === 0) { finalArray = res[0].pageFunctionResult; }
-                                  else { finalArray = finalArray.concat( res[i].pageFunctionResult ); }
-                                } 
-                           return finalArray
-                        })
-
-        // deduplicate
-        .then((res) => {
-                    res = res.filter((thing, index, self) =>
-                      index === self.findIndex((t) => (
-                         t.name === thing.name
-                      ))
-                    )
-                    return res
-        })
-
-        // sort
-        .then(res => {  
-                  let newArray = res; for (var i = 0; i < res.length; i++){ newArray[i].price = parseInt(newArray[i].price.replace(',', '').replace('$', '')) }; 
-                  return newArray.sort((a, b) => a.price - b.price)  })
-
-        // set results as state
-        .then((res) => {
-                    this.setState({data: res}); 
-                    // console.log(res)
-        })
+      this._getUsedTeslaData()
      
   }
 
@@ -52,18 +21,80 @@ export default class PriceTrackerUsed extends React.Component {
 
   };
 
-  _getRandomColor () {
-    var hex = Math.floor(Math.random() * 0xFFFFFF);
-    return "#" + ("000000" + hex.toString(16)).substr(-6);
+
+  _getUsedTeslaData(){
+
+    this.setState({loading: true})
+
+    // GET SCRAPED TESLA RESULTS
+    fetch('https://api.apify.com/v1/rG44NsjnfukCkKecE/crawlers/oZsdPYyHQ97zcaJvB/lastExec/results?token=PCARqhzaNZDF5oB9wxHux344H')
+      .then((res) => { return res.json()})
+      
+      // merge arrays from different pages
+      .then(res =>  {   
+                        let finalArray = []
+                        for (var i = 0; i < res.length; i++){
+                                if (i === 0) { finalArray = res[0].pageFunctionResult; }
+                                else { finalArray = finalArray.concat( res[i].pageFunctionResult ); }
+                              } 
+                        return finalArray
+                      })
+
+      // filter by Tesla
+      // .then((res) => {
+      //             console.log(res)
+      //             var filtered = res.filter(car =>  {return car.name.indexOf('Tesla') !== -1} )
+      //             return filtered
+      // })
+
+      // edit properties of car object
+      .then(res => {
+                // console.log(res)
+                let newArray = res; 
+                for (var i = 0; i < res.length; i++){ 
+                        newArray[i].price = newArray[i].price.substring(0, 7);
+                }; 
+                return newArray
+              }
+      )
+
+      // sort
+      .then(res => {  
+                let newArray = res; for (var i = 0; i < res.length; i++){ newArray[i].price = parseInt(newArray[i].price.replace(',', '').replace('$', '')) }; 
+                return newArray.sort((a, b) => a.price - b.price)  })
+
+      // set results as state
+      .then((res) => {
+            // console.log('USED TESLAS: ', res)
+            this.setState({data: res, loading: false});
+      })
+
+      // .then(() => {
+      //     // GET OWN LISTINGS
+      //     fetch('https://electrade-server.herokuapp.com/api/listings/get/'+'0')
+      //       .then((res) => res.json())
+      //       .then((json) => { this.setState({data: json.concat(this.state.data), loading: false}); console.log('USED CAR DATA:',this.state.data) })
+      // })   
+
   }
 
 
   render() {
     return (
       <div class="box">
-        <p class=""><b>USED Electric Vehicle Prices (updated daily)</b></p>
+        <p>
+          <span class="">
+            <b>Used Tesla Deals Near </b>
+            <select>
+              <option value="San Francisco, CA">San Francisco, CA</option>
+            </select> 
+          </span>
+          <br />
+        </p>
+
+
         {this.state.data.map(item => (
-                  <a href={"https://www.edmunds.com"+item.link} target="_blank" rel="noopener noreferrer">
+                  <a href={item.url} target="_blank" rel="noopener noreferrer">
                     <div style={{display: 'flex', flexDirection: 'row'}}>
                       
                       <div key={item.name} style={{flex: 1}}>
@@ -71,14 +102,14 @@ export default class PriceTrackerUsed extends React.Component {
                       </div>
 
 
-                      <div style={{flex: 1}}>
+                      <div style={{flex: 3}}>
                         <span class="carPrice" >${item.price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</span>
-                      </div>
-
-                      <div key={item.name} style={{flex: 4}}>
-                          <div class="carName">
-                            {item.name.replace('USED', '')}
-                          </div>
+                        <div class="carName">
+                          {item.name.replace('USED', '')}
+                        </div>
+                        <div class="source">
+                          {item.location} | {item.miles}
+                        </div>
                       </div>
 
                     </div>

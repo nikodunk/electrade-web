@@ -48,20 +48,20 @@ export default class PriceTrackerUsed extends React.Component {
       // })
 
       // edit properties of car object
-      .then(res => {
-                // console.log(res)
-                let newArray = res; 
-                for (var i = 0; i < res.length; i++){ 
-                        newArray[i].price = newArray[i].price.substring(0, 7);
-                }; 
-                return newArray
-              }
-      )
+      // .then(res => {
+      //           // console.log(res)
+      //           let newArray = res; 
+      //           for (var i = 0; i < res.length; i++){ 
+      //                   newArray[i].price = newArray[i].price.substring(0, 7);
+      //           }; 
+      //           return newArray
+      //         }
+      // )
 
       // sort
-      .then(res => {  
-                let newArray = res; for (var i = 0; i < res.length; i++){ newArray[i].price = parseInt(newArray[i].price.replace(',', '').replace('$', '')) }; 
-                return newArray.sort((a, b) => a.price - b.price)  })
+      // .then(res => {  
+      //           let newArray = res; for (var i = 0; i < res.length; i++){ newArray[i].price = parseInt(newArray[i].price.replace(',', '').replace('$', '')) }; 
+      //           return newArray.sort((a, b) => a.price - b.price)  })
 
       // set results as state
       .then((res) => {
@@ -103,7 +103,7 @@ export default class PriceTrackerUsed extends React.Component {
 
 
                       <div style={{flex: 3}}>
-                        <span class="carPrice" >${item.price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</span>
+                        <span class="carPrice" >{item.price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</span>
                         <div class="carName">
                           {item.name.replace('USED', '')}
                         </div>

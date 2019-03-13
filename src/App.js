@@ -22,8 +22,6 @@ export default class App extends React.Component{
   componentDidMount() {
 
 
-
-
   }
   
   render(){
@@ -32,7 +30,7 @@ export default class App extends React.Component{
             <div class="navbar">
               <span>
                 <img src="/electron.png" alt="" />&nbsp;
-                <span class="title"><b>electrade</b> | Find a used Tesla near you</span>
+                <span class="title"><b>electrade</b> | EV Price Tracker. Find EV deals near you. Find used Teslas near you.</span>
                 <a class="AppButton title time" href="https://itunes.apple.com/us/app/id1445602414" target="blank">Get the App</a>
               </span>
             </div>

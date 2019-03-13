@@ -12,7 +12,6 @@ export default class PriceTrackerUsed extends React.Component {
 
   componentWillMount() {
       this._getUsedTeslaData()
-     
   }
 
 
@@ -27,9 +26,9 @@ export default class PriceTrackerUsed extends React.Component {
     this.setState({loading: true})
 
     // GET SCRAPED TESLA RESULTS
-    fetch('https://api.apify.com/v1/rG44NsjnfukCkKecE/crawlers/oZsdPYyHQ97zcaJvB/lastExec/results?token=PCARqhzaNZDF5oB9wxHux344H')
+    fetch('https://electrade-server.herokuapp.com/api/scrapes/get/'+'0')
       .then((res) => { return res.json()})
-      
+
       // merge arrays from different pages
       .then(res =>  {   
                         let finalArray = []
@@ -40,12 +39,6 @@ export default class PriceTrackerUsed extends React.Component {
                         return finalArray
                       })
 
-      // filter by Tesla
-      // .then((res) => {
-      //             console.log(res)
-      //             var filtered = res.filter(car =>  {return car.name.indexOf('Tesla') !== -1} )
-      //             return filtered
-      // })
 
       // edit properties of car object
       // .then(res => {
@@ -101,11 +94,10 @@ export default class PriceTrackerUsed extends React.Component {
                             <img src={item.image} class="carImage" alt="Used Car Image" />
                       </div>
 
-
                       <div style={{flex: 3}}>
                         <span class="carPrice" >{item.price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</span>
                         <div class="carName">
-                          {item.name.replace('USED', '')}
+                          {item.name}
                         </div>
                         <div class="source">
                           {item.location} | {item.miles}

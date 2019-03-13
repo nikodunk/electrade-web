@@ -97,7 +97,8 @@ li a {
 }
 
 .carImage{
-	
+	max-width: 300px !important;
+	padding-right: 10px;
 }
 
 hr {
@@ -126,11 +127,11 @@ button {
 }
 
 .carName{
-	padding-left: 5px;
+
 }
 
 .carPrice{
-	opacity: .7;
+	font-weight: 800
 }
 
 .AppButton{

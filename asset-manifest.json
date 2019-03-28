@@ -1,13 +1,21 @@
 {
-  "main.css": "/static/css/main.dd18bfcc.chunk.css",
-  "main.js": "/static/js/main.ca61e916.chunk.js",
-  "main.js.map": "/static/js/main.ca61e916.chunk.js.map",
+  "main.css": "/static/css/main.4bdb2439.chunk.css",
+  "main.js": "/static/js/main.21a27ef6.chunk.js",
+  "main.js.map": "/static/js/main.21a27ef6.chunk.js.map",
   "runtime~main.js": "/static/js/runtime~main.fdfcfda2.js",
   "runtime~main.js.map": "/static/js/runtime~main.fdfcfda2.js.map",
-  "static/js/2.94302b8b.chunk.js": "/static/js/2.94302b8b.chunk.js",
-  "static/js/2.94302b8b.chunk.js.map": "/static/js/2.94302b8b.chunk.js.map",
+  "static/js/2.979bcf57.chunk.js": "/static/js/2.979bcf57.chunk.js",
+  "static/js/2.979bcf57.chunk.js.map": "/static/js/2.979bcf57.chunk.js.map",
   "index.html": "/index.html",
-  "precache-manifest.ce832bd8bad1716fdafc3d3e1006ac7e.js": "/precache-manifest.ce832bd8bad1716fdafc3d3e1006ac7e.js",
+  "precache-manifest.c623763310db0b1300cf32b91c3ab96c.js": "/precache-manifest.c623763310db0b1300cf32b91c3ab96c.js",
   "service-worker.js": "/service-worker.js",
-  "static/css/main.dd18bfcc.chunk.css.map": "/static/css/main.dd18bfcc.chunk.css.map"
+  "static/css/main.4bdb2439.chunk.css.map": "/static/css/main.4bdb2439.chunk.css.map",
+  "static/media/bolt.jpg": "/static/media/bolt.3b938641.jpg",
+  "static/media/etron.jpg": "/static/media/etron.0ef0a743.jpg",
+  "static/media/fiat.jpg": "/static/media/fiat.61a9a223.jpg",
+  "static/media/golf.jpg": "/static/media/golf.f41734f7.jpg",
+  "static/media/i3.jpg": "/static/media/i3.4b334f0e.jpg",
+  "static/media/kona.jpg": "/static/media/kona.91ed75b9.jpg",
+  "static/media/leaf.jpg": "/static/media/leaf.ce7844ba.jpg",
+  "static/media/model3.jpg": "/static/media/model3.2b3bb081.jpg"
 }

@@ -1,6 +1,6 @@
 import React from 'react';
-import AddListingCrumb from './Crumbs/AddListingCrumb'
-import PriceTrackerUsed from './Crumbs/PriceTrackerUsed'
+
+import PriceTracker from './Crumbs/PriceTracker'
 
 
 export default class Crumbs extends React.Component {
@@ -9,26 +9,13 @@ export default class Crumbs extends React.Component {
     this.state = {
       
     };
-    this.handleSubmit = this.handleSubmit.bind(this);
+
   }
 
   componentWillMount() {
 
       
   }
-
-  
-  handleSubmit(e) {
-      e.preventDefault();
-      console.log('uas')
-      var _input = document.getElementById("myInput").value
-      console.log(_input)
-      this.ref.push({
-        email: _input
-      });
-      document.getElementById('theForm').style.display = 'none';
-  }
-  
 
   componentWillUnmount() {
 
@@ -39,9 +26,8 @@ export default class Crumbs extends React.Component {
   render() {
     return (
       <div>
-          <AddListingCrumb />
-
-          <PriceTrackerUsed />
+          
+          <PriceTracker />
 
     </div>
     )

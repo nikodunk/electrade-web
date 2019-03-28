@@ -149,3 +149,8 @@ button {
     z-index: 100;
     padding: 10px;
 }
+
+
+.videoImage{
+	max-height: 210px;
+}

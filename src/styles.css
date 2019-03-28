@@ -55,7 +55,7 @@ li a {
 
 .listings{
 	padding: 10px;
-	flex: 1;
+	flex: 2;
 	overflow-y: scroll;
 	/*border-left: solid 1px lightgrey;	*/
 	height: 92vh;
@@ -153,4 +153,9 @@ button {
 
 .videoImage{
 	max-height: 210px;
+}
+
+td {
+	width: 100px;
+	text-align: left;
 }

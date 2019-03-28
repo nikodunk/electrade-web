@@ -62,13 +62,21 @@ export default class PriceTracker extends React.Component {
             </select> 
           </span>
           <br />
+          <hr />
         </p>
 
         {this.state.leases ? 
           <table>
             <th>
-              <td width="200">Make and model</td>
+              <td>Make and model</td>
+              <td>Year</td>
+              <td>$/ mo</td>
+              <td>Months</td>
+              <td>Down + Acq Fee</td>
               <td>$/ mo avg</td>
+              <td>$ Total</td>
+              <td>Dealer</td>
+              <td>Expires</td>
             </th>
 
             {this.state.leases.map(item => (
@@ -87,8 +95,15 @@ export default class PriceTracker extends React.Component {
                                                 model3Image} />
                                 <p style={{}}>{item.title} for {item.price}</p>*/}
 
-                                  <td width="200">{item["Make and Model"]}</td>
+                                  <td>{item["Make and Model"]}</td>
+                                  <td>{item["Year"]}</td>
+                                  <td>{item["$"]["mo"]}</td>
+                                  <td>{item["months"]}</td>
+                                  <td>{item["down+acq"]}</td>
                                   <td>{item["$"]["mo avg"]}</td>
+                                  <td>{item["$ total"]}</td>
+                                  <td>{item["Dealer"]}</td>
+                                  <td>{item["Exp"]}</td>
 
                         </a>
                     {/*: null }*/}

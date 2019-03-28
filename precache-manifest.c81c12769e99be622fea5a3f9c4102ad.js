@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "ce7844ba4fa4784fae8dc69bc9dde679",
-    "url": "/static/media/leaf.ce7844ba.jpg"
+    "revision": "0ef0a743e0d2f10ec41f81cbbf952ec2",
+    "url": "/static/media/etron.0ef0a743.jpg"
   },
   {
-    "revision": "754b56ae30cbc766ee1c",
-    "url": "/static/css/main.e4cf8e19.chunk.css"
+    "revision": "ff8c1ef183e0c3944b76",
+    "url": "/static/css/main.434affde.chunk.css"
   },
   {
     "revision": "fdfcfda2d9b1bf31db52",
@@ -24,16 +24,16 @@ self.__precacheManifest = [
     "url": "/static/media/bolt.3b938641.jpg"
   },
   {
-    "revision": "754b56ae30cbc766ee1c",
-    "url": "/static/js/main.754b56ae.chunk.js"
+    "revision": "ce7844ba4fa4784fae8dc69bc9dde679",
+    "url": "/static/media/leaf.ce7844ba.jpg"
   },
   {
     "revision": "91ed75b9944ab0961e74a9c9a39ece71",
     "url": "/static/media/kona.91ed75b9.jpg"
   },
   {
-    "revision": "0ef0a743e0d2f10ec41f81cbbf952ec2",
-    "url": "/static/media/etron.0ef0a743.jpg"
+    "revision": "ff8c1ef183e0c3944b76",
+    "url": "/static/js/main.ff8c1ef1.chunk.js"
   },
   {
     "revision": "4b334f0efcc8e6eb57ba9a6d8a459b4b",
@@ -48,7 +48,23 @@ self.__precacheManifest = [
     "url": "/static/media/golf.f41734f7.jpg"
   },
   {
-    "revision": "1524634b6419253dabedddb7f7067b08",
+    "revision": "f4e6f27620454ede320e6c8410f7d9e5",
+    "url": "/static/media/bmw330e.f4e6f276.jpg"
+  },
+  {
+    "revision": "6b50995d488b3a068e2dcc3025529e86",
+    "url": "/static/media/prime.6b50995d.jpg"
+  },
+  {
+    "revision": "3a3e84021e727536536fd533d15bcaff",
+    "url": "/static/media/volt.3a3e8402.jpg"
+  },
+  {
+    "revision": "7d919d46e67a65beb21df4e23cd36a8d",
+    "url": "/static/media/niro.7d919d46.jpg"
+  },
+  {
+    "revision": "26b786080347ffd92e02a5c0a8ec4d01",
     "url": "/index.html"
   }
 ];

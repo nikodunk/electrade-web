@@ -1,15 +1,16 @@
 {
-  "main.css": "/static/css/main.e4cf8e19.chunk.css",
-  "main.js": "/static/js/main.754b56ae.chunk.js",
-  "main.js.map": "/static/js/main.754b56ae.chunk.js.map",
+  "main.css": "/static/css/main.434affde.chunk.css",
+  "main.js": "/static/js/main.ff8c1ef1.chunk.js",
+  "main.js.map": "/static/js/main.ff8c1ef1.chunk.js.map",
   "runtime~main.js": "/static/js/runtime~main.fdfcfda2.js",
   "runtime~main.js.map": "/static/js/runtime~main.fdfcfda2.js.map",
   "static/js/2.979bcf57.chunk.js": "/static/js/2.979bcf57.chunk.js",
   "static/js/2.979bcf57.chunk.js.map": "/static/js/2.979bcf57.chunk.js.map",
   "index.html": "/index.html",
-  "precache-manifest.ae523c826417899d804b25368301ab97.js": "/precache-manifest.ae523c826417899d804b25368301ab97.js",
+  "precache-manifest.c81c12769e99be622fea5a3f9c4102ad.js": "/precache-manifest.c81c12769e99be622fea5a3f9c4102ad.js",
   "service-worker.js": "/service-worker.js",
-  "static/css/main.e4cf8e19.chunk.css.map": "/static/css/main.e4cf8e19.chunk.css.map",
+  "static/css/main.434affde.chunk.css.map": "/static/css/main.434affde.chunk.css.map",
+  "static/media/bmw330e.jpg": "/static/media/bmw330e.f4e6f276.jpg",
   "static/media/bolt.jpg": "/static/media/bolt.3b938641.jpg",
   "static/media/etron.jpg": "/static/media/etron.0ef0a743.jpg",
   "static/media/fiat.jpg": "/static/media/fiat.61a9a223.jpg",
@@ -17,5 +18,8 @@
   "static/media/i3.jpg": "/static/media/i3.4b334f0e.jpg",
   "static/media/kona.jpg": "/static/media/kona.91ed75b9.jpg",
   "static/media/leaf.jpg": "/static/media/leaf.ce7844ba.jpg",
-  "static/media/model3.jpg": "/static/media/model3.2b3bb081.jpg"
+  "static/media/model3.jpg": "/static/media/model3.2b3bb081.jpg",
+  "static/media/niro.jpg": "/static/media/niro.7d919d46.jpg",
+  "static/media/prime.jpg": "/static/media/prime.6b50995d.jpg",
+  "static/media/volt.jpg": "/static/media/volt.3a3e8402.jpg"
 }

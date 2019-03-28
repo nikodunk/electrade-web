@@ -45,7 +45,6 @@ export default class PriceTracker extends React.Component {
         // set results as state
         .then((res) => {
               this.setState({leases: res});
-              this._getRegion()
         })   
     }
 

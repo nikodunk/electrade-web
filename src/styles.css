@@ -151,11 +151,31 @@ button {
 }
 
 
-.videoImage{
-	max-height: 210px;
+.videoContainer {
+    opacity: 1;
+    background-color: black;
+    width: 100px;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+.videoImage {
+    max-width: 100%;
+    border-radius: 10px;
+    opacity: .5;
+
+}
+
+.videoTitle {
+    margin: 20;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 30;
+    color: white;
 }
 
 td {
 	width: 100px;
 	text-align: left;
+	vertical-align: top;
 }

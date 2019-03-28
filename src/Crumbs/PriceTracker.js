@@ -11,6 +11,11 @@ const i3Image = require('../img/i3.jpg')
 const fiatImage = require('../img/fiat.jpg')
 const golfImage = require('../img/golf.jpg')
 
+const bmwImage = require('../img/bmw330e.jpg')
+const primeImage = require('../img/prime.jpg')
+const voltImage = require('../img/volt.jpg')
+const niroImage = require('../img/niro.jpg')
+
 
 
 export default class PriceTracker extends React.Component {
@@ -68,22 +73,24 @@ export default class PriceTracker extends React.Component {
         {this.state.leases ? 
           <table>
             <th>
+              <td>Image</td>
               <td>Make and model</td>
-              <td>Year</td>
               <td>$/ mo</td>
               <td>Months</td>
               <td>Down + Acq Fee</td>
+              <td>Miles / Yr</td>
               <td>$/ mo avg</td>
               <td>$ Total</td>
-              <td>Dealer</td>
+              {/*<td>Dealer</td>*/}
               <td>Expires</td>
             </th>
 
             {this.state.leases.map(item => (
                   <tr >
-                    {/* {item.regions.indexOf(this.state.region) !== -1 ? */}
                         <a >
-                                {/*<img  class="videoImage"
+                                  <td>
+                                    <img  
+                                        class="videoImage"
                                         src={
                                                 item.teaserImage === 'Bolt' ? boltImage : 
                                                 item.teaserImage === 'Leaf' ? leafImage : 
@@ -92,21 +99,23 @@ export default class PriceTracker extends React.Component {
                                                 item.teaserImage === '500e' ? fiatImage : 
                                                 item.teaserImage === 'i3' ? i3Image : 
                                                 item.teaserImage === 'Golf' ? golfImage : 
+                                                item.teaserImage === '330e' ? bmwImage : 
+                                                item.teaserImage === 'Prime' ? primeImage : 
+                                                item.teaserImage === 'Volt' ? voltImage : 
+                                                item.teaserImage === 'Niro' ? niroImage : 
                                                 model3Image} />
-                                <p style={{}}>{item.title} for {item.price}</p>*/}
-
-                                  <td>{item["Make and Model"]}</td>
-                                  <td>{item["Year"]}</td>
+                                  </td>
+                                  <td><span>{item["Make and Model"]} {item["Year"]}</span></td>
                                   <td>{item["$"]["mo"]}</td>
                                   <td>{item["months"]}</td>
                                   <td>{item["down+acq"]}</td>
-                                  <td>{item["$"]["mo avg"]}</td>
+                                  <td>{item["miles"]["yr"]}</td>
+                                  <td style={{color: '#98ff98'}}>{item["$"]["mo avg"]}</td>
                                   <td>{item["$ total"]}</td>
-                                  <td>{item["Dealer"]}</td>
+                                  {/*<td>{item["Dealer"]}</td>*/}
                                   <td>{item["Exp"]}</td>
-
                         </a>
-                    {/*: null }*/}
+                    <hr />
                   </tr>
             ))}
         </table> : null }

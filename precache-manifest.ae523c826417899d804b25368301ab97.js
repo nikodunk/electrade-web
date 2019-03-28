@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/static/media/leaf.ce7844ba.jpg"
   },
   {
-    "revision": "21a27ef622072d379ca4",
-    "url": "/static/css/main.4bdb2439.chunk.css"
+    "revision": "754b56ae30cbc766ee1c",
+    "url": "/static/css/main.e4cf8e19.chunk.css"
   },
   {
     "revision": "fdfcfda2d9b1bf31db52",
@@ -24,8 +24,8 @@ self.__precacheManifest = [
     "url": "/static/media/bolt.3b938641.jpg"
   },
   {
-    "revision": "21a27ef622072d379ca4",
-    "url": "/static/js/main.21a27ef6.chunk.js"
+    "revision": "754b56ae30cbc766ee1c",
+    "url": "/static/js/main.754b56ae.chunk.js"
   },
   {
     "revision": "91ed75b9944ab0961e74a9c9a39ece71",
@@ -48,7 +48,7 @@ self.__precacheManifest = [
     "url": "/static/media/golf.f41734f7.jpg"
   },
   {
-    "revision": "5725300214f2b93646b2b1a5ba0b9e23",
+    "revision": "1524634b6419253dabedddb7f7067b08",
     "url": "/index.html"
   }
 ];

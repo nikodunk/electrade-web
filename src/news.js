@@ -63,33 +63,34 @@ export default class News extends React.Component {
 
   render() {
     return (
-      <div class="box">
-        <span class=""><b>Latest EV News</b></span>
-        <hr />
+      <div>
+        <p style={{textAlign: 'center'}}><b>Latest Electric Car News</b></p>
+        <div class="box">
 
-        {this.state.data.map(item => (
-          <a onclick="ga('send', 'event', 'NewsItem', 'clicked', 'textlinks');" target="_blank" class="item" href={item.link} rel="noopener noreferrer">
-                  <div key={item.text} class="newsItem">
-                    <div>
-                      <img 
-                          src={item.image} 
-                          alt="" 
-                          class="newsImage" />
+          {this.state.data.map(item => (
+            <a onclick="ga('send', 'event', 'NewsItem', 'clicked', 'textlinks');" target="_blank" class="item" href={item.link} rel="noopener noreferrer">
+                    <div key={item.text} class="newsItem">
+                      <div>
+                        <img 
+                            src={item.image} 
+                            alt="" 
+                            class="newsImage" />
+                      </div>
+                      <div>
+                        <p>
+                          {item.text.substring(0, item.text.indexOf('http'))}&nbsp;
+                          <span class="source"><i>{item.source}</i></span>
+                        </p> 
+                      </div>
+                      <div class="newsItemRight">
+                        <p class="time">
+                          <TimeAgo date={item.date} />
+                        </p>
+                      </div>
                     </div>
-                    <div>
-                      <p>
-                        {item.text.substring(0, item.text.indexOf('http'))}&nbsp;
-                        <span class="source"><i>{item.source}</i></span>
-                      </p> 
-                    </div>
-                    <div class="newsItemRight">
-                      <p class="time">
-                        <TimeAgo date={item.date} />
-                      </p>
-                    </div>
-                  </div>
-          </a>
-                ))}
+            </a>
+                  ))}
+        </div>
       </div>
     )
   }

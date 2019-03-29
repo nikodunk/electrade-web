@@ -2,19 +2,19 @@ import React from 'react';
 
 
 
-const model3Image = require('../img/model3.jpg')
-const boltImage = require('../img/bolt.jpg')
-const leafImage = require('../img/leaf.jpg')
-const konaImage = require('../img/kona.jpg')
-const etronImage = require('../img/etron.jpg')
-const i3Image = require('../img/i3.jpg')
-const fiatImage = require('../img/fiat.jpg')
-const golfImage = require('../img/golf.jpg')
+const model3Image = require('./img/model3.jpg')
+const boltImage = require('./img/bolt.jpg')
+const leafImage = require('./img/leaf.jpg')
+const konaImage = require('./img/kona.jpg')
+const etronImage = require('./img/etron.jpg')
+const i3Image = require('./img/i3.jpg')
+const fiatImage = require('./img/fiat.jpg')
+const golfImage = require('./img/golf.jpg')
 
-const bmwImage = require('../img/bmw330e.jpg')
-const primeImage = require('../img/prime.jpg')
-const voltImage = require('../img/volt.jpg')
-const niroImage = require('../img/niro.jpg')
+const bmwImage = require('./img/bmw330e.jpg')
+const primeImage = require('./img/prime.jpg')
+const voltImage = require('./img/volt.jpg')
+const niroImage = require('./img/niro.jpg')
 
 
 
@@ -89,10 +89,10 @@ export default class PriceTracker extends React.Component {
 
   render() {
     return (
-      <div class="box">
-        <p>
+      <div>
+        <p style={{textAlign: 'center'}}>
           <span class="">
-            <b>Best local Electric Vehicle lease deals around </b>
+            <b>Best Electric Vehicle lease deals around </b>
             <select onChange={(result) => this._onChange(result.target.value) }>
               <option value="CA(N)">Bay Area, CA</option>
               <option value="CA(S)">Los Angeles Area, CA</option>
@@ -109,15 +109,17 @@ export default class PriceTracker extends React.Component {
               <option value="WA">Washington</option>
             </select> 
             &nbsp;&nbsp;
+            &nbsp;
+            Last updated: March 22 2019
+            &nbsp;
             <a style={{color: 'lightblue'}} href="http://ev-vin.blogspot.com/">
               Source
             </a>
-            &nbsp;&nbsp;
-            Last updated: March 22 2019
+            
           </span>
           <br />
-          <hr />
         </p>
+      <div class="box">
 
 
           {this.state.filteredLeases ? 
@@ -175,5 +177,6 @@ export default class PriceTracker extends React.Component {
           </table> : null }
 
       </div>
+    </div>
   )}
 }

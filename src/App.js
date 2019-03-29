@@ -2,8 +2,8 @@ import React from 'react'
 import ReactDOM from 'react-dom';
 import News from './News'
 import './styles.css';
-import Listings from './Listings'
 
+import PriceTracker from './PriceTracker'
 
 
 export default class App extends React.Component{
@@ -49,7 +49,7 @@ export default class App extends React.Component{
               </div>
 
               <div class="listings">
-                  <Listings />
+                <PriceTracker />
               </div>
 
             </div>

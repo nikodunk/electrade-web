@@ -75,7 +75,7 @@ export default class PriceTracker extends React.Component {
 
       // GET CURRENT LEASES
       // fetch('http://localhost:8080/api/leases/get')
-      fetch('https://electrade-server.herokuapp.com/api/leases/SF/get')
+      fetch('https://electrade-server.herokuapp.com/api/leases/all/get')
         .then((res) => { return res.json()})
 
         // set results as state

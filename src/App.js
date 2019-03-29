@@ -30,8 +30,12 @@ export default class App extends React.Component{
             <div class="navbar">
               <span>
                 <img src="/electron.png" alt="" />&nbsp;
-                <span class="title"><b>electrade</b> | Follow EV news, track local electric car deals.</span>
-                <a class="AppButton title time" href="https://itunes.apple.com/us/app/id1445602414" target="blank">Get the App</a>
+                <span class="title"><b>electrade</b> | EV lease & news tracker.</span>
+              </span>
+              <span>
+                <a class="AppButton title time" href="https://itunes.apple.com/us/app/id1445602414" target="blank">Get iOS App</a>
+                &nbsp;
+                <a class="AppButton title time" href="https://play.google.com/store/apps/details?id=com.bigset.electric" target="blank">Get Android App</a>
               </span>
             </div>
             

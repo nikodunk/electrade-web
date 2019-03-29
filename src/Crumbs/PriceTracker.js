@@ -24,7 +24,9 @@ export default class PriceTracker extends React.Component {
     this.state = {
       data: [],
       loading: false,
-      region: 'SF Bay Area'
+      leases: null,
+      filteredLeases: null,
+      region: 'CA(N)'
     };
   }
 
@@ -40,17 +42,46 @@ export default class PriceTracker extends React.Component {
   };
 
 
+  _onChange(newRegion){
+
+    this.setState({region: newRegion, filteredLeases: null})
+    setTimeout(() => this._filter(), 1)
+  }
+
+
+
+  _filter(){
+    
+    let filtered
+
+    // filter by region
+    filtered = this.state.leases.filter((item, index) => item["State"] === this.state.region )
+
+    // deduplicate
+    filtered = filtered.filter((thing, index, self) =>
+                            index === self.findIndex((t) => (
+                               t["Make and Model"] === thing["Make and Model"]
+                          )))
+
+    this.setState({filteredLeases: filtered})
+
+
+  }
+
+
   _getLeases(){
 
       // GET CURRENT LEASES
       // fetch('http://localhost:8080/api/leases/get')
       fetch('https://electrade-server.herokuapp.com/api/leases/SF/get')
         .then((res) => { return res.json()})
-        
+
         // set results as state
         .then((res) => {
               this.setState({leases: res});
-        })   
+        })
+
+        .then(() => this._filter())
     }
 
   
@@ -62,63 +93,87 @@ export default class PriceTracker extends React.Component {
         <p>
           <span class="">
             <b>Best local Electric Vehicle lease deals around </b>
-            <select>
-              <option value="San Francisco, CA">San Francisco, CA</option>
+            <select onChange={(result) => this._onChange(result.target.value) }>
+              <option value="CA(N)">Bay Area, CA</option>
+              <option value="CA(S)">Los Angeles Area, CA</option>
+              <option value="NY">New York</option>
+              <option value="CO">Colorado</option>
+              <option value="FL">Florida</option>
+              <option value="GA">Georgia</option>
+              <option value="IL">Illinois</option>
+              <option value="IL">Massachusetts</option>
+              <option value="MD">Maryland</option>
+              <option value="NJ">New Jersey</option>
+              <option value="OR">Oregon</option>
+              <option value="VA">Virginia</option>
+              <option value="WA">Washington</option>
             </select> 
+            &nbsp;&nbsp;
+            <a style={{color: 'lightblue'}} href="http://ev-vin.blogspot.com/">
+              Source
+            </a>
+            &nbsp;&nbsp;
+            Last updated: March 22 2019
           </span>
           <br />
           <hr />
         </p>
 
-        {this.state.leases ? 
-          <table>
-            <th>
-              <td>Image</td>
-              <td>Make and model</td>
-              <td>$/ mo</td>
-              <td>Months</td>
-              <td>Down + Acq Fee</td>
-              <td>Miles / Yr</td>
-              <td>$/ mo avg</td>
-              <td>$ Total</td>
-              {/*<td>Dealer</td>*/}
-              <td>Expires</td>
-            </th>
 
-            {this.state.leases.map(item => (
-                  <tr >
-                        <a >
-                                  <td>
-                                    <img  
-                                        class="videoImage"
-                                        src={
-                                                item.teaserImage === 'Bolt' ? boltImage : 
-                                                item.teaserImage === 'Leaf' ? leafImage : 
-                                                item.teaserImage === 'Etron' ? etronImage : 
-                                                item.teaserImage === 'Kona' ? konaImage : 
-                                                item.teaserImage === '500e' ? fiatImage : 
-                                                item.teaserImage === 'i3' ? i3Image : 
-                                                item.teaserImage === 'Golf' ? golfImage : 
-                                                item.teaserImage === '330e' ? bmwImage : 
-                                                item.teaserImage === 'Prime' ? primeImage : 
-                                                item.teaserImage === 'Volt' ? voltImage : 
-                                                item.teaserImage === 'Niro' ? niroImage : 
-                                                model3Image} />
-                                  </td>
-                                  <td><span>{item["Make and Model"]} {item["Year"]}</span></td>
-                                  <td>{item["$"]["mo"]}</td>
-                                  <td>{item["months"]}</td>
-                                  <td>{item["down+acq"]}</td>
-                                  <td>{item["miles"]["yr"]}</td>
-                                  <td style={{color: '#98ff98'}}>{item["$"]["mo avg"]}</td>
-                                  <td>{item["$ total"]}</td>
-                                  {/*<td>{item["Dealer"]}</td>*/}
-                                  <td>{item["Exp"]}</td>
-                        </a>
-                    <hr />
-                  </tr>
-            ))}
-        </table> : null }
+          {this.state.filteredLeases ? 
+            <table>
+              <th style={{borderBottom: '1px solid lightgrey'}}>
+                <td style={{width: 200}}>Make and model</td>
+                <td>Year</td>
+                <td>$/ mo</td>
+                <td>Months</td>
+                <td>Down + Acq Fee</td>
+                <td>Miles / Yr</td>
+                <td>$ Total</td>
+                <td>$/ mo avg</td>
+                <td>Dealer</td>
+                <td>Expires</td>
+              </th>
+
+
+              {this.state.filteredLeases.map(item => (
+                    <tr >
+                          <a >
+                                    <td style={{width: 200}}>
+                                      <img  
+                                          class="videoImage"
+                                          src={
+                                                  item.teaserImage === 'Bolt' ? boltImage : 
+                                                  item.teaserImage === 'Leaf' ? leafImage : 
+                                                  item.teaserImage === 'Etron' ? etronImage : 
+                                                  item.teaserImage === 'Kona' ? konaImage : 
+                                                  item.teaserImage === '500e' ? fiatImage : 
+                                                  item.teaserImage === 'i3' ? i3Image : 
+                                                  item.teaserImage === 'Golf' ? golfImage : 
+                                                  item.teaserImage === '330e' ? bmwImage : 
+                                                  item.teaserImage === 'Prime' ? primeImage : 
+                                                  item.teaserImage === 'Volt' ? voltImage : 
+                                                  item.teaserImage === 'Niro' ? niroImage : 
+                                                  item.teaserImage === 'Model3' ? model3Image : 
+                                                  null
+                                                  } />
+                                        <span><b>{item["Make and Model"]}</b></span>
+                                    </td>
+                                    <td>{item["Year"]}</td>
+                                    <td>{item["$/mo"]}</td>
+                                    <td>{item["months"]}</td>
+                                    <td>{item["down+acq"]}</td>
+                                    <td>{item["miles/yr"]}</td>
+                                    <td>{item["$ total"]}</td>
+                                    <td style={{color: '#98ff98'}}>{item["$/mo avg"]}</td>
+                                    <td>{item["Dealer"]}</td>
+                                    <td>{item["Exp"]}</td>
+                          </a>
+                      <hr />
+                    </tr>
+              ))}
+          </table> : null }
+
       </div>
   )}
 }

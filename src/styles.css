@@ -135,8 +135,10 @@ button {
 }
 
 .AppButton{
-	position: absolute;
-	right: 10px;
+	margin-left: auto !important;
+	margin-right: 0 !important;
+	text-align: right;
+
 	cursor: pointer;
 	border-color: dodgerblue !important;
 }
@@ -148,6 +150,8 @@ button {
     box-shadow: 0 1px 3px -1px lightgrey;
     z-index: 100;
     padding: 10px;
+    display: flex;
+    justify-content: space-between;
 }
 
 
@@ -176,6 +180,6 @@ button {
 
 td {
 	width: 100px;
-	text-align: left;
-	vertical-align: top;
+	text-align: center;
+	vertical-align: middle;
 }

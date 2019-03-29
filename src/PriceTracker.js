@@ -145,7 +145,7 @@ export default class PriceTracker extends React.Component {
                     <tr >
                           <span >
                                     <td style={{width: 200}}>
-                                      <img  
+                                      {/*<img  
                                           class="videoImage"
                                           src={
                                                   item.teaserImage === 'Bolt' ? boltImage : 
@@ -161,7 +161,7 @@ export default class PriceTracker extends React.Component {
                                                   item.teaserImage === 'Niro' ? niroImage : 
                                                   item.teaserImage === 'Model3' ? model3Image : 
                                                   null
-                                                  } />
+                                                  } />*/}
                                         <span><b>{item["Make and Model"]}</b></span>
                                     </td>
                                     <td>{item["Year"]}</td>

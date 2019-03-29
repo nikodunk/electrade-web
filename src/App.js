@@ -49,7 +49,7 @@ export default class App extends React.Component{
               </div>
 
               <div class="listings">
-                <PriceTracker />
+                
               </div>
 
             </div>

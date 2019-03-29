@@ -42,9 +42,10 @@ export default class PriceTracker extends React.Component {
   };
 
 
-  _onChange(newRegion){
+  _onChange(e){
+    e.preventDefault()
 
-    this.setState({region: newRegion, filteredLeases: null})
+    this.setState({region: e.target.value, filteredLeases: null})
     setTimeout(() => this._filter(), 1)
   }
 
@@ -90,7 +91,35 @@ export default class PriceTracker extends React.Component {
   render() {
     return (
       <div>
-        
+        <p style={{textAlign: 'center'}}>
+          <span class="">
+            <b>Best Electric Vehicle lease deals around </b>
+            <select onChange={(e) => this._onChange(e) }>
+              <option value="CA(N)">Bay Area, CA</option>
+              <option value="CA(S)">Los Angeles Area, CA</option>
+              <option value="NY">New York</option>
+              <option value="CO">Colorado</option>
+              <option value="FL">Florida</option>
+              <option value="GA">Georgia</option>
+              <option value="IL">Illinois</option>
+              <option value="IL">Massachusetts</option>
+              <option value="MD">Maryland</option>
+              <option value="NJ">New Jersey</option>
+              <option value="OR">Oregon</option>
+              <option value="VA">Virginia</option>
+              <option value="WA">Washington</option>
+            </select> 
+            &nbsp;&nbsp;
+            &nbsp;
+            Last updated: March 22 2019
+            &nbsp;
+            <a style={{color: 'lightblue'}} href="http://ev-vin.blogspot.com/">
+              Source
+            </a>
+            
+          </span>
+          <br />
+        </p>
       <div class="box">
 
 

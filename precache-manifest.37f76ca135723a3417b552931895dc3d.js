@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/static/media/etron.0ef0a743.jpg"
   },
   {
-    "revision": "c107f21d5ed2a64e598d",
+    "revision": "515544cf1f0d5b60e000",
     "url": "/static/css/main.12a45dbd.chunk.css"
   },
   {
@@ -32,8 +32,8 @@ self.__precacheManifest = [
     "url": "/static/media/kona.91ed75b9.jpg"
   },
   {
-    "revision": "c107f21d5ed2a64e598d",
-    "url": "/static/js/main.c107f21d.chunk.js"
+    "revision": "515544cf1f0d5b60e000",
+    "url": "/static/js/main.515544cf.chunk.js"
   },
   {
     "revision": "4b334f0efcc8e6eb57ba9a6d8a459b4b",
@@ -64,7 +64,7 @@ self.__precacheManifest = [
     "url": "/static/media/niro.7d919d46.jpg"
   },
   {
-    "revision": "c9ff7ff8b3bdb0f66086d109aed343f5",
+    "revision": "235cadba1851591559d75ea1c456707b",
     "url": "/index.html"
   }
 ];

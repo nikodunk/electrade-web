@@ -1,5 +1,6 @@
 import React from 'react';
 
+import AddListingCrumb from './AddListingCrumb'
 
 
 const model3Image = require('./img/model3.jpg')
@@ -134,14 +135,15 @@ export default class PriceTracker extends React.Component {
                 <td>Miles / Yr</td>
                 <td>$ Total</td>
                 <td>$/ mo avg</td>
-                <td>Dealer</td>
+                {/*<td>Dealer</td>*/}
                 <td>Expires</td>
+                <td style={{width: 200}}>Contact</td>
               </th>
 
 
               {this.state.filteredLeases.map(item => (
                     <tr >
-                          <a >
+                          <span >
                                     <td style={{width: 200}}>
                                       <img  
                                           class="videoImage"
@@ -169,9 +171,12 @@ export default class PriceTracker extends React.Component {
                                     <td>{item["miles/yr"]}</td>
                                     <td>{item["$ total"]}</td>
                                     <td style={{color: '#98ff98'}}>{item["$/mo avg"]}</td>
-                                    <td>{item["Dealer"]}</td>
+                                    {/*<td>{item["Dealer"]}</td>*/}
                                     <td>{item["Exp"]}</td>
-                          </a>
+                                    <td style={{width: 200}}>
+                                      <AddListingCrumb region={this.state.region} car={item["Make and Model"]} />
+                                    </td>
+                          </span>
                       <hr />
                     </tr>
               ))}

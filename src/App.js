@@ -43,7 +43,6 @@ export default class App extends React.Component{
 
             <div class="container">
 
-
               <div class="news">
                 <News />
               </div>

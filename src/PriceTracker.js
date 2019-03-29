@@ -127,8 +127,7 @@ export default class PriceTracker extends React.Component {
           {this.state.filteredLeases ? 
             <table>
               <th style={{borderBottom: '1px solid lightgrey'}}>
-                <td style={{width: 200}}>Make and model</td>
-                <td>Year</td>
+                <td style={{width: 200}}>Make, model, Year</td>
                 <td>$/ mo</td>
                 <td>Months</td>
                 <td>Down + Acq Fee</td>
@@ -145,7 +144,7 @@ export default class PriceTracker extends React.Component {
                     <tr >
                           <span >
                                     <td style={{width: 200}}>
-                                      {/*<img  
+                                      <img  
                                           class="videoImage"
                                           src={
                                                   item.teaserImage === 'Bolt' ? boltImage : 
@@ -161,10 +160,9 @@ export default class PriceTracker extends React.Component {
                                                   item.teaserImage === 'Niro' ? niroImage : 
                                                   item.teaserImage === 'Model3' ? model3Image : 
                                                   null
-                                                  } />*/}
-                                        <span><b>{item["Make and Model"]}</b></span>
+                                                  } />
+                                        <span><b>{item["Make and Model"]}</b>, {item["Year"]}</span>
                                     </td>
-                                    <td>{item["Year"]}</td>
                                     <td>{item["$/mo"]}</td>
                                     <td>{item["months"]}</td>
                                     <td>{item["down+acq"]}</td>

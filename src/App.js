@@ -47,9 +47,9 @@ export default class App extends React.Component{
                 <News />
               </div>
 
-              <div class="listings">
+              {/* <div class="listings">
                 <PriceTracker />
-              </div>
+              </div> */}
 
             </div>
 
